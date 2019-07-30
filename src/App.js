@@ -32,7 +32,32 @@ function App() {
               display: "visible"
             }
           }}
-          whileHover={{ rotate: 360, x: 500, y: -500, backgroundColor: "#FFF" }}
+          whileHover={{
+            rotate: 360,
+            x: -500,
+            y: -500,
+            backgroundColor: "#FFF"
+          }}
+          transition={spring}
+        />
+        <motion.div
+          animate={{
+            x: 0,
+            width: 100,
+            height: 100,
+            backgroundColor: "rgb(40,44,61)",
+            boxShadow: "10px 10px 0 rgba(0, 0, 0, 0.2)",
+            position: "relative",
+            transitionEnd: {
+              display: "visible"
+            }
+          }}
+          whileHover={{
+            rotate: 720,
+            x: 500,
+            y: -500,
+            backgroundColor: "#FFF"
+          }}
           transition={spring}
         />
       </header>
