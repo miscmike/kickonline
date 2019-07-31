@@ -15,7 +15,7 @@ const ProfileProps = {
 function App() {
   return (
     <div className="App">
-      <Sidebar props={ProfileProps}>
+      <Sidebar {...ProfileProps}>
         {/* <Profile props={ProfileProps} />
         <SideNav>
           <NavList />
