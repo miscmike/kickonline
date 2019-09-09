@@ -58,7 +58,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <h1>Coming soon!</h1>
         <div className="buttonrow">
-          →<a href="/">party instead</a>←
+          →<a href="https://firstparty.kickonline.co">party instead</a>←
         </div>
         {/* <animated.div style={props}>hello</animated.div> */}
 
