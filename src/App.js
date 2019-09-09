@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>Coming soon!</p>
+        <p>First dance!</p>
         <div>
           <animated.div style={props}>hello</animated.div>
         </div>
