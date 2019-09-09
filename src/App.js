@@ -16,7 +16,6 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>Double dance!</p>
         <div>
           <animated.div style={props}>hello</animated.div>
         </div>
@@ -36,6 +35,21 @@ function App() {
           transition={spring}
         />
       </header>
+      <form name="contact" netlify>
+        <p>
+          <label>
+            Name <input type="text" name="name" />
+          </label>
+        </p>
+        <p>
+          <label>
+            Email <input type="email" name="email" />
+          </label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
     </div>
   );
 }
