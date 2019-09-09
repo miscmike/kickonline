@@ -4,6 +4,46 @@ import "./App.css";
 import { motion } from "framer-motion";
 import { useSpring, animated } from "react-spring";
 
+class TimerInput extends React.Component {
+  render() {
+    return (
+      <div>
+        <h3>Input your desired time</h3>
+        <input type="number" required />
+      </div>
+    );
+  }
+}
+class Timer extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1> </h1>
+      </div>
+    );
+  }
+}
+class StartButton extends React.Component {
+  render() {
+    return (
+      <div>
+        <button>Start</button>
+      </div>
+    );
+  }
+}
+// class App extends React.Component {
+//   render() {
+//     return (
+//       <div>
+//         <TimerInput />
+//         <Timer />
+//         <StartButton />
+//       </div>
+//     );
+//   }
+// }
+
 function App() {
   const props = useSpring({
     opacity: 1,
@@ -16,11 +56,13 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>What does it matter</p>
-        <div>
-          <animated.div style={props}>hello</animated.div>
+        <h1>Coming soon!</h1>
+        <div className="buttonrow">
+          →<a href="https://firstparty.kickonline.co">party instead</a>←
         </div>
-        <motion.div
+        {/* <animated.div style={props}>hello</animated.div> */}
+
+        {/* <motion.div
           animate={{
             x: 0,
             width: 100,
@@ -34,7 +76,7 @@ function App() {
           }}
           whileHover={{ rotate: 360, x: 500, y: -500, backgroundColor: "#FFF" }}
           transition={spring}
-        />
+        /> */}
       </header>
     </div>
   );
