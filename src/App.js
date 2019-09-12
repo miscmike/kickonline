@@ -16,7 +16,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>what do we do</p>
+        <p>two lines</p>
+        <p>is better than one</p>
         <div>
           <animated.div style={props}>hello</animated.div>
         </div>
