@@ -15,12 +15,6 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        FIrst day of the end of the worldas soon as 2020 starts
-        <p>is better than one</p>
-        {/* <div>
-          <animated.div style={props}>hello</animated.div>
-        </div> */}
         <motion.div
           animate={{
             x: 0,
@@ -36,7 +30,33 @@ function App() {
           whileHover={{ rotate: 360, x: 500, y: -500, backgroundColor: "#FFF" }}
           transition={spring}
         />
-        <QRCode value="http://facebook.github.io/react/" />
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
+        Start the year right
+        {/* <div>
+          <animated.div style={props}>hello</animated.div>
+        </div> */}
+        {/* <QRCode value="http://facebook.github.io/react/" /> */}
+        <form name="contact" method="post">
+          <input type="hidden" name="form-name" value="contact" />
+          <p>
+            <label>
+              Name: <input type="text" name="name" />
+            </label>
+          </p>
+          <p>
+            <label>
+              Email: <input type="email" name="email" />
+            </label>
+          </p>
+          <p>
+            <label>
+              Message: <textarea name="message"></textarea>
+            </label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
       </header>
     </div>
   );
