@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import { motion } from "framer-motion";
+import QRCode from "qrcode.react";
 // import { useSpring, animated } from "react-spring";
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <p>two lines</p>
+        FIrst day of the end of the worldas soon as 2020 starts
         <p>is better than one</p>
         {/* <div>
           <animated.div style={props}>hello</animated.div>
@@ -35,7 +36,23 @@ function App() {
           whileHover={{ rotate: 360, x: 500, y: -500, backgroundColor: "#FFF" }}
           transition={spring}
         />
+        <QRCode value="http://facebook.github.io/react/" />
       </header>
+      <form name="contact" netlify>
+        <p>
+          <label>
+            Name <input type="text" name="name" />
+          </label>
+        </p>
+        <p>
+          <label>
+            Email <input type="email" name="email" />
+          </label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
     </div>
   );
 }
