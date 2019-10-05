@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <motion.div
+        {/* <motion.div
           animate={{
             x: 0,
             width: 100,
@@ -29,7 +29,7 @@ function App() {
           }}
           whileHover={{ rotate: 360, x: 500, y: -500, backgroundColor: "#FFF" }}
           transition={spring}
-        />
+        /> */}
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
         Start the year right
         {/* <div>
@@ -40,21 +40,18 @@ function App() {
           <input type="hidden" name="form-name" value="contact" />
           <p>
             <label>
-              Name: <input type="text" name="name" />
+              name:
+              <input type="text" name="name" />
             </label>
           </p>
           <p>
             <label>
-              Email: <input type="email" name="email" />
+              email:
+              <input type="email" name="email" />
             </label>
           </p>
           <p>
-            <label>
-              Message: <textarea name="message"></textarea>
-            </label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
+            <button type="submit">party time</button>
           </p>
         </form>
       </header>
