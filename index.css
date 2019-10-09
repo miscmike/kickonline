@@ -2,16 +2,20 @@
   /* background: #5222ee; */
   display: block;
   width: 100%;
-  height: 100%;
-  margin: -100px 0 0 0;
-  -webkit-animation: Gradient 5s ease infinite alternate;
-  -moz-animation: Gradient 5s ease infinite alternate;
-  animation: Fade 5s ease infinite alternate;
+  height: 200px;
+  margin: 0 0 0 0;
+  -webkit-animation: Fade 5s ease;
+  -moz-animation: Fade 5s ease;
+  animation: Fade 5s ease;
+  /* -webkit-animation: Fade 5s ease infinite alternate;
+  -moz-animation: Fade 5s ease infinite alternate;
+  animation: Fade 5s ease infinite alternate; */
 }
 
 #clock {
   display: flex;
   font-family: "Courier New", Courier, monospace;
+  /* color: #ea0af1; */
 }
 
 .months,
