@@ -38,13 +38,10 @@ body {
   justify-content: center;
   font-size: 48px;
   text-align: center;
-
-  width: 100wh;
-  height: 90vh;
   color: #fff;
   background: linear-gradient(45deg, #162d6b, #2d0a2e, #05221b);
   background-color: rgb(38, 38, 38);
-  background-size: 400% 400%;
+  background-size: 100% 100%;
   -webkit-animation: Gradient 15s ease infinite;
   -moz-animation: Gradient 15s ease infinite;
   animation: Gradient 15s ease infinite;
