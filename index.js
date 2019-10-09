@@ -5,7 +5,7 @@ Zfont.init(Zdog);
 // https://zzz.dog/api#illustration
 var illo = new Zdog.Illustration({
   element: ".zdog-canvas",
-  dragRotate: true,
+  //   dragRotate: true,
   rotate: { x: -0.32, y: 0.64, z: 0 },
   //   resize: true,
   onResize: function(width, height) {
@@ -89,7 +89,7 @@ function animate() {
   wave(subShadow);
 
   //   sub.value[0] = sub.value[0] + "a";
-
+  illo.rotate.y += 0.001;
   t += tStep;
   //   illo.translate.x += 1;
   //   illo.transform.opacity +
