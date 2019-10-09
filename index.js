@@ -27,12 +27,12 @@ var title = new Zdog.TextGroup({
   addTo: illo,
   font: font,
   value: "Zfont",
-  fontSize: 60,
+  fontSize: 24,
   translate: { y: -100 },
   textAlign: "left",
   textBaseline: "middle",
-  color: "#fff",
-  fill: true
+  color: "#fff"
+  //   fill: true
 });
 
 // Duplicate the title to create a shadow effect
