@@ -53,7 +53,7 @@ var sub = new Zdog.TextGroup({
   font: font,
   // Pass an array as the text value for multiline text:
   value: ["FIRST", "DANCE"],
-  fontSize: 128,
+  fontSize: 96,
   textAlign: "center",
   textBaseline: "middle",
   color: "#ea0af1",
