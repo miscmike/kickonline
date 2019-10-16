@@ -20,34 +20,6 @@ var illo = new Zdog.Illustration({
 var font = new Zdog.Font({
   src: "https://cdn.jsdelivr.net/gh/jaames/zfont/demo/fredokaone.ttf"
 });
-
-// Create a TextGroup object for the title
-// https://github.com/jaames/zfont#zdogtextgroup
-var title = new Zdog.TextGroup({
-  addTo: illo,
-  font: font,
-  value: "Zfont",
-  fontSize: 24,
-  translate: { y: -100 },
-  textAlign: "left",
-  textBaseline: "middle",
-  color: "#fff"
-  //   fill: true
-});
-
-// Duplicate the title to create a shadow effect
-var titleShadow = title.copyGraph({
-  translate: { z: -6, y: -100 },
-  color: "#aab"
-});
-
-var titleShadowTwo = title.copyGraph({
-  translate: { z: -12, y: -100 },
-  color: "#aab"
-});
-
-// Create a TextGroup object for the subtitle
-// https://github.com/jaames/zfont#zdogtextgroup
 var sub = new Zdog.TextGroup({
   addTo: illo,
   font: font,
@@ -62,6 +34,182 @@ var sub = new Zdog.TextGroup({
 
 // Duplicate the subtitle to create a shadow effect
 var subShadow = sub.copyGraph({
+  translate: { z: 10 },
+  color: "#FFF"
+});
+
+var illoTwo = new Zdog.Illustration({
+  element: ".zdog-canvas-two",
+  //   dragRotate: true,
+  rotate: { x: 0.32, y: -0.64, z: 0 },
+  //   resize: true,
+  onResize: function(width, height) {
+    var minSize = Math.min(width, height);
+    this.zoom = minSize / 420;
+  }
+});
+
+var subTwo = new Zdog.TextGroup({
+  addTo: illoTwo,
+  font: font,
+  // Pass an array as the text value for multiline text:
+  value: ["NYE"],
+  fontSize: 96,
+  textAlign: "center",
+  textBaseline: "middle",
+  color: "#ea0af1",
+  fill: true
+});
+
+// Duplicate the subtitle to create a shadow effect
+var subShadowTwo = subTwo.copyGraph({
+  translate: { z: 10 },
+  color: "#FFF"
+});
+
+var illoThree = new Zdog.Illustration({
+  element: ".zdog-canvas-three",
+  //   dragRotate: true,
+  rotate: { x: 0.32, y: -0.64, z: 0 },
+  //   resize: true,
+  onResize: function(width, height) {
+    var minSize = Math.min(width, height);
+    this.zoom = minSize / 420;
+  }
+});
+
+var subThree = new Zdog.TextGroup({
+  addTo: illoThree,
+  font: font,
+  // Pass an array as the text value for multiline text:
+  value: ["Artist #1"],
+  fontSize: 96,
+  textAlign: "center",
+  textBaseline: "middle",
+  color: "#ea0af1",
+  fill: true
+});
+
+// Duplicate the subtitle to create a shadow effect
+var subShadowThree = subThree.copyGraph({
+  translate: { z: 10 },
+  color: "#FFF"
+});
+
+var illoFour = new Zdog.Illustration({
+  element: ".zdog-canvas-four",
+  //   dragRotate: true,
+  rotate: { x: 0.32, y: -0.64, z: 0 },
+  //   resize: true,
+  onResize: function(width, height) {
+    var minSize = Math.min(width, height);
+    this.zoom = minSize / 420;
+  }
+});
+
+var subFour = new Zdog.TextGroup({
+  addTo: illoFour,
+  font: font,
+  // Pass an array as the text value for multiline text:
+  value: ["Artist #1"],
+  fontSize: 96,
+  textAlign: "center",
+  textBaseline: "middle",
+  color: "#ea0af1",
+  fill: true
+});
+
+// Duplicate the subtitle to create a shadow effect
+var subShadowFour = subFour.copyGraph({
+  translate: { z: 10 },
+  color: "#FFF"
+});
+//illo5
+var illoFive = new Zdog.Illustration({
+  element: ".zdog-canvas-five",
+  //   dragRotate: true,
+  rotate: { x: 0.32, y: -0.64, z: 0 },
+  //   resize: true,
+  onResize: function(width, height) {
+    var minSize = Math.min(width, height);
+    this.zoom = minSize / 420;
+  }
+});
+
+var subFive = new Zdog.TextGroup({
+  addTo: illoFive,
+  font: font,
+  // Pass an array as the text value for multiline text:
+  value: ["Artist #1"],
+  fontSize: 96,
+  textAlign: "center",
+  textBaseline: "middle",
+  color: "#ea0af1",
+  fill: true
+});
+
+// Duplicate the subtitle to create a shadow effect
+var subShadowFive = subFive.copyGraph({
+  translate: { z: 10 },
+  color: "#FFF"
+});
+
+//illo 6
+var illoSix = new Zdog.Illustration({
+  element: ".zdog-canvas-six",
+  //   dragRotate: true,
+  rotate: { x: 0.32, y: -0.64, z: 0 },
+  //   resize: true,
+  onResize: function(width, height) {
+    var minSize = Math.min(width, height);
+    this.zoom = minSize / 420;
+  }
+});
+
+var subSix = new Zdog.TextGroup({
+  addTo: illoSix,
+  font: font,
+  // Pass an array as the text value for multiline text:
+  value: ["Artist #1"],
+  fontSize: 96,
+  textAlign: "center",
+  textBaseline: "middle",
+  color: "#ea0af1",
+  fill: true
+});
+
+// Duplicate the subtitle to create a shadow effect
+var subShadowSix = subSix.copyGraph({
+  translate: { z: 10 },
+  color: "#FFF"
+});
+
+//illo 7
+var illoSeven = new Zdog.Illustration({
+  element: ".zdog-canvas-seven",
+  //   dragRotate: true,
+  rotate: { x: 0.32, y: -0.64, z: 0 },
+  //   resize: true,
+  onResize: function(width, height) {
+    var minSize = Math.min(width, height);
+    this.zoom = minSize / 420;
+  }
+});
+
+var subSeven = new Zdog.TextGroup({
+  addTo: illoSeven,
+  font: font,
+  // Pass an array as the text value for multiline text:
+  value: ["Artist #1"],
+  fontSize: 96,
+  textAlign: "center",
+  textBaseline: "middle",
+  color: "#ea0af1",
+  fill: true
+});
+
+// Duplicate the subtitle to create a shadow effect
+var subShadowSeven = subSeven.copyGraph({
   translate: { z: 10 },
   color: "#FFF"
 });
@@ -83,18 +231,39 @@ function wave(group) {
 
 // Animation loop
 function animate() {
-  wave(title);
-  wave(titleShadow);
+  // wave(title);
+  // wave(titleShadow);
   wave(sub);
   wave(subShadow);
+  // wave(subTwo);
+  // wave(subShadowTwo);
 
   //   sub.value[0] = sub.value[0] + "a";
   illo.rotate.y += 0.001;
+  illoTwo.rotate.x += 0.01;
+  illoTwo.rotate.y += -0.001;
+  illoThree.rotate.x += 0.01;
+  illoThree.rotate.y += -0.001;
+  illoFour.rotate.x += 0.01;
+  illoFour.rotate.y += -0.001;
+  illoFive.rotate.x += 0.01;
+  illoFive.rotate.y += -0.001;
+  illoSix.rotate.x += 0.01;
+  illoSix.rotate.y += -0.001;
+  illoSeven.rotate.x += 0.01;
+  illoSeven.rotate.y += -0.001;
+
   t += tStep;
   //   illo.translate.x += 1;
   //   illo.transform.opacity +
   //   illo.translate.x += 0.3 * Math.sign(Math.random() - 0.5);
   illo.updateRenderGraph();
+  illoTwo.updateRenderGraph();
+  illoThree.updateRenderGraph();
+  illoFour.updateRenderGraph();
+  illoFive.updateRenderGraph();
+  illoSix.updateRenderGraph();
+  illoSeven.updateRenderGraph();
   requestAnimationFrame(animate);
 }
 // illo.translate.x += -600;
