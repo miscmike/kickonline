@@ -8,6 +8,20 @@
   animation: Fade 5s ease infinite alternate;*/
 }
 
+.countdownVis {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: left;
+  width: 100%;
+  font-size: 64px;
+  color: #ea0af1;
+}
+
+#leftDot {
+  padding: 0 92vw 0 0;
+  transition: padding 3s ease-out;
+}
+
 #clock {
   display: flex;
   font-family: "Courier New", Courier, monospace;

@@ -108,7 +108,7 @@ window.onload = function(e) {
     diffTime = eventTime - currentTime,
     duration = moment.duration(diffTime * 1000, "milliseconds"),
     interval = 1000;
-  this.console.log(diffTime);
+  // this.console.log(diffTime);
 
   // if time to countdown
   if (diffTime > 0) {
@@ -118,7 +118,9 @@ window.onload = function(e) {
       days = document.querySelector(".days"),
       hours = document.querySelector(".hours"),
       minutes = document.querySelector(".minutes"),
-      seconds = document.querySelector(".seconds");
+      seconds = document.querySelector(".seconds"),
+      left = document.getElementById("leftDot");
+
     // h = $('<div class="hours" ></div>').appendTo($clock),
     // m = $('<div class="minutes" ></div>').appendTo($clock),
     // s = $('<div class="seconds" ></div>').appendTo($clock);
@@ -140,6 +142,13 @@ window.onload = function(e) {
       hours.textContent = h + "h";
       minutes.textContent = mi + "m";
       seconds.textContent = s + "s";
+      left.style.paddingRight = "50vw";
+      // left.style.paddingRight = `${Math.floor(200 * Math.random())}px`;
+      // left.style.paddingRight = `${95 *
+      //   (duration.asMilliseconds() / 6572755000)}%`;
     }, interval);
+    console.log(duration.asMilliseconds());
+    console.log(6572755000);
+    console.log(duration.asMilliseconds() / 6572755000);
   }
 };
