@@ -70,7 +70,7 @@ var subShadowTwo = subTwo.copyGraph({
 var illoThree = new Zdog.Illustration({
   element: ".zdog-canvas-three",
   //   dragRotate: true,
-  rotate: { x: 0.32, y: -0.64, z: 0 },
+  rotate: { x: -0.64, y: 0.32, z: 0 },
   //   resize: true,
   onResize: function(width, height) {
     var minSize = Math.min(width, height);
@@ -82,7 +82,7 @@ var subThree = new Zdog.TextGroup({
   addTo: illoThree,
   font: font,
   // Pass an array as the text value for multiline text:
-  value: ["Artist #1"],
+  value: ["Artist", "One"],
   fontSize: 96,
   textAlign: "center",
   textBaseline: "middle",
@@ -99,7 +99,7 @@ var subShadowThree = subThree.copyGraph({
 var illoFour = new Zdog.Illustration({
   element: ".zdog-canvas-four",
   //   dragRotate: true,
-  rotate: { x: 0.32, y: -0.64, z: 0 },
+  rotate: { x: 0.64, y: -0.32, z: 0 },
   //   resize: true,
   onResize: function(width, height) {
     var minSize = Math.min(width, height);
@@ -111,7 +111,7 @@ var subFour = new Zdog.TextGroup({
   addTo: illoFour,
   font: font,
   // Pass an array as the text value for multiline text:
-  value: ["Artist #1"],
+  value: ["Artist", "Two"],
   fontSize: 96,
   textAlign: "center",
   textBaseline: "middle",
@@ -140,7 +140,7 @@ var subFive = new Zdog.TextGroup({
   addTo: illoFive,
   font: font,
   // Pass an array as the text value for multiline text:
-  value: ["Artist #1"],
+  value: ["Artist", "Three"],
   fontSize: 96,
   textAlign: "center",
   textBaseline: "middle",
@@ -170,7 +170,7 @@ var subSix = new Zdog.TextGroup({
   addTo: illoSix,
   font: font,
   // Pass an array as the text value for multiline text:
-  value: ["Artist #1"],
+  value: ["Artist", "Four"],
   fontSize: 96,
   textAlign: "center",
   textBaseline: "middle",
@@ -200,7 +200,7 @@ var subSeven = new Zdog.TextGroup({
   addTo: illoSeven,
   font: font,
   // Pass an array as the text value for multiline text:
-  value: ["Artist #1"],
+  value: ["Artist", "Five"],
   fontSize: 96,
   textAlign: "center",
   textBaseline: "middle",
@@ -239,19 +239,18 @@ function animate() {
   // wave(subShadowTwo);
 
   //   sub.value[0] = sub.value[0] + "a";
-  illo.rotate.y += 0.001;
-  illoTwo.rotate.x += 0.01;
-  illoTwo.rotate.y += -0.001;
-  illoThree.rotate.x += 0.01;
-  illoThree.rotate.y += -0.001;
-  illoFour.rotate.x += 0.01;
-  illoFour.rotate.y += -0.001;
-  illoFive.rotate.x += 0.01;
-  illoFive.rotate.y += -0.001;
-  illoSix.rotate.x += 0.01;
-  illoSix.rotate.y += -0.001;
-  illoSeven.rotate.x += 0.01;
-  illoSeven.rotate.y += -0.001;
+  illo.rotate.y += 0.002;
+  illoTwo.rotate.x += 0.002;
+  illoThree.rotate.z += 0.002;
+  // illoThree.rotate.y += -0.002;
+  illoFour.rotate.x += 0.002;
+  // illoFour.rotate.y += -0.002;
+  // illoFive.rotate.x += 0.01;
+  illoFive.rotate.y += -0.002;
+  // illoSix.rotate.x += 0.01;
+  illoSix.rotate.z += -0.002;
+  illoSeven.rotate.x += 0.002;
+  illoSeven.rotate.y += -0.002;
 
   t += tStep;
   //   illo.translate.x += 1;
