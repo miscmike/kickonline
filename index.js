@@ -103,7 +103,7 @@ animate();
 
 window.onload = function(e) {
   let clock = document.querySelector("#clock"),
-    eventTime = moment("12-12-2019 00:00:01", "DD-MM-YYYY HH:mm:ss").unix(),
+    eventTime = moment("01-01-2020 00:00:01", "DD-MM-YYYY HH:mm:ss").unix(),
     currentTime = moment().unix(),
     diffTime = eventTime - currentTime,
     duration = moment.duration(diffTime * 1000, "milliseconds"),
