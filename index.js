@@ -20,9 +20,13 @@ var illo = new Zdog.Illustration({
 var font = new Zdog.Font({
   src: "https://cdn.jsdelivr.net/gh/jaames/zfont/demo/fredokaone.ttf"
 });
+
+var modakFont = new Zdog.Font({
+  src: "https://ucarecdn.com/a00147ba-a7a7-47ed-b519-2e9ec2403d2a/"
+});
 var sub = new Zdog.TextGroup({
   addTo: illo,
-  font: font,
+  font: modakFont,
   // Pass an array as the text value for multiline text:
   value: ["FIRST", "DANCE"],
   fontSize: 96,
@@ -51,7 +55,7 @@ var illoTwo = new Zdog.Illustration({
 
 var subTwo = new Zdog.TextGroup({
   addTo: illoTwo,
-  font: font,
+  font: spaghettiFont,
   // Pass an array as the text value for multiline text:
   value: ["NYE"],
   fontSize: 96,
