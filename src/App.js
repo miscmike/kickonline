@@ -56,9 +56,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <h1>Coming soon!</h1>
+        <h1>Bespoke events</h1>
         <div className="buttonrow">
-          →<a href="https://firstdance.kickonline.co">party instead</a>←
+          →<a href="https://firstdance.kickonline.co">first dance</a>←
         </div>
         {/* <animated.div style={props}>hello</animated.div> */}
 
