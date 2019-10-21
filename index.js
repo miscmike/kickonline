@@ -55,7 +55,7 @@ var illoTwo = new Zdog.Illustration({
 
 var subTwo = new Zdog.TextGroup({
   addTo: illoTwo,
-  font: spaghettiFont,
+  font: modakFont,
   // Pass an array as the text value for multiline text:
   value: ["NYE"],
   fontSize: 96,
