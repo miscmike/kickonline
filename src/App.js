@@ -1,37 +1,37 @@
 import React from "react";
 import logo from "./kickonline_logo.svg";
 import "./App.css";
-import { motion } from "framer-motion";
-import { useSpring, animated } from "react-spring";
+// import { motion } from "framer-motion";
+// import { useSpring} from "react-spring";
 
-class TimerInput extends React.Component {
-  render() {
-    return (
-      <div>
-        <h3>Input your desired time</h3>
-        <input type="number" required />
-      </div>
-    );
-  }
-}
-class Timer extends React.Component {
-  render() {
-    return (
-      <div>
-        <h1> </h1>
-      </div>
-    );
-  }
-}
-class StartButton extends React.Component {
-  render() {
-    return (
-      <div>
-        <button>Start</button>
-      </div>
-    );
-  }
-}
+// class TimerInput extends React.Component {
+//   render() {
+//     return (
+//       <div>
+//         <h3>Input your desired time</h3>
+//         <input type="number" required />
+//       </div>
+//     );
+//   }
+// }
+// class Timer extends React.Component {
+//   render() {
+//     return (
+//       <div>
+//         <h1> </h1>
+//       </div>
+//     );
+//   }
+// }
+// class StartButton extends React.Component {
+//   render() {
+//     return (
+//       <div>
+//         <button>Start</button>
+//       </div>
+//     );
+//   }
+// }
 // class App extends React.Component {
 //   render() {
 //     return (
@@ -45,12 +45,12 @@ class StartButton extends React.Component {
 // }
 
 function App() {
-  const props = useSpring({
-    opacity: 1,
-    from: { opacity: 0 },
-    delay: 4000,
-    config: { duration: 4000, easing: t => t * t * t }
-  });
+  // const props = useSpring({
+  //   opacity: 1,
+  //   from: { opacity: 0 },
+  //   delay: 4000,
+  //   config: { duration: 4000, easing: t => t * t * t }
+  // });
 
   return (
     <div className="App">
@@ -82,10 +82,10 @@ function App() {
   );
 }
 
-const spring = {
-  type: "spring",
-  damping: 200,
-  stiffness: 20
-};
+// const spring = {
+//   type: "spring",
+//   damping: 200,
+//   stiffness: 20
+// };
 
 export default App;
