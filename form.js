@@ -3,7 +3,7 @@ $("#my-form").submit(function(e) {
 
   var $form = $(this);
   $.post($form.attr("action"), $form.serialize()).then(function() {
-    alert("Thank you!");
+    hideForm;
   });
 });
 
@@ -20,7 +20,7 @@ $("#my-form").submit(function(e) {
 //   .querySelectorAll("button")[0]
 //   .addEventListener("click", hideForm);
 
-function hideForm(event) {
+function hideForm() {
   console.log("you're getting here");
   let form = document.getElementById("form-div");
   console.log(form.classList);
