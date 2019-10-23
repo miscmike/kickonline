@@ -4,7 +4,6 @@
 //   return false;
 // };
 
-// console.log(document.forms[0]);
 let button = document
   .querySelector("button")
   .addEventListener("click", hideForm);
