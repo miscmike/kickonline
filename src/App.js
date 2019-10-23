@@ -56,7 +56,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <h1>Bespoke events</h1>
+        <h1>an event</h1>
         <div className="buttonrow">
           →<a href="https://firstdance.kickonline.co">first dance</a>←
         </div>
