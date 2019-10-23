@@ -1,90 +1,64 @@
-.zdog-canvas {
-  display: block;
-  -webkit-animation: Fade 5s ease;
-  -moz-animation: Fade 5s ease;
-  animation: Fade 5s ease;
-  /* -webkit-animation: Fade 5s ease infinite alternate;
-  -moz-animation: Fade 5s ease infinite alternate;
-  animation: Fade 5s ease infinite alternate;*/
+.App-link {
+  color: #61dafb;
 }
 
-.countdownVis {
+.buttonrow {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: left;
-  width: 100%;
-  font-size: 64px;
-  color: #ea0af1;
+  flex-direction: row;
+  align-items: center;
 }
 
-#leftDot {
-  padding: 0 92vw 0 0;
-  transition: padding 3s ease-out;
-}
-
-#clock {
-  display: flex;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 24px;
+a {
+  font-size: 18px;
   font-weight: 600;
-  text-align: center;
-  color: #ea0af1;
-  -webkit-animation: Fade 10s ease;
-  -moz-animation: Fade 10s ease;
-  animation: Fade 10s ease;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 8px 16px;
+  margin: 0 16px;
+  text-decoration: none;
+  /* width: 160px; */
+  height: 32px;
+  border-radius: 8px;
+  color: white;
 }
 
-p {
-  font-size: 24px;
-}
-
-.months,
-.days,
-.hours,
-.minutes,
-.seconds {
-  padding: 0px 16px 0px 0px;
+a:hover {
+  background-color: darkblue;
 }
 
 body {
-  font-family: "Abril Fatface";
+  background-color: #282c34;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
-  /* font-size: 48px; */
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+
   text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  width: 100wh;
+  height: 90vh;
   color: #fff;
-  background: linear-gradient(45deg, #162d6b, #2d0a2e, #05221b);
-  background-color: rgb(38, 38, 38);
-  background-size: 100% 100%;
+  background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  background-clip: initial;
   -webkit-animation: Gradient 15s ease infinite;
   -moz-animation: Gradient 15s ease infinite;
   animation: Gradient 15s ease infinite;
+  background-clip: initial;
 }
 
-label {
-  font-size: 16px;
-}
-
-.box {
-  margin: 16px;
-  text-align: right;
-}
-
-input {
-  border-radius: 2px;
-  border-width: 0px;
-  margin: 0 0 0 4px;
-  font-size: 16px;
-  cursor: text;
-  padding: 4px;
-}
-
-button {
-  width: 120px;
-  font-size: 16px;
-  border-radius: 8px;
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @-webkit-keyframes Gradient {
@@ -120,14 +94,5 @@ button {
   }
   100% {
     background-position: 0% 50%;
-  }
-}
-
-@keyframes Fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
