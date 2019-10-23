@@ -3,15 +3,18 @@ document.forms[0].onsubmit = function(event) {
   hideForm(event);
 };
 
-console.log(document.forms[0]);
+// console.log(document.forms[0]);
 
 function hideForm(event) {
-  event.target.classList.toggle("inactive");
+  let form = document.getElementById("form-div");
+  console.log(form.classList);
+  form.classList.toggle("inactive");
   let clock = document.getElementById("clock");
   setTimeout(function() {
-    event.target.style.display = "none";
+    // form.style.display = "none";
     clock.classList.toggle("active");
     clock.classList.toggle("inactive");
+    clock.style.transform = "translateY(-100px)";
   }, 3000);
   //   event.target.style.transform = "opacity";
   //   event.target.style.display = "none";

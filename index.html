@@ -16,43 +16,44 @@
     <canvas class="zdog-canvas-five" height="440px" width="500px"></canvas>
     <canvas class="zdog-canvas-six" height="440px" width="500px"></canvas>
     <!-- <canvas class="zdog-canvas-seven" height="440px" width="500px"></canvas> -->
-
-    <div>
-      <form name="contact" method="post" class="active" netlify>
-        <input type="hidden" name="form-name" value="contact" />
-        <div class="box">
-          <label>
-            name
-            <input type="text" name="name" />
-          </label>
-        </div>
-        <div class="box">
-          <label>
-            email
-            <input type="email" name="email" />
-          </label>
-        </div>
-        <div class="box">
-          <label>
-            message
-            <input type="text" name="message" />
-          </label>
-        </div>
-        <div class="box">
-          <button type="submit">submit</button>
-        </div>
-      </form>
-    </div>
-    <!-- <div class="countdownVis">
+    <div class="bottom-container">
+      <div id="form-div">
+        <form name="contact" method="post" class="active" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact" />
+          <div class="box">
+            <label>
+              name
+              <input type="text" name="name" />
+            </label>
+          </div>
+          <div class="box">
+            <label>
+              email
+              <input type="email" name="email" />
+            </label>
+          </div>
+          <div class="box">
+            <label>
+              message
+              <input type="text" name="message" />
+            </label>
+          </div>
+          <div class="box">
+            <button type="submit">submit</button>
+          </div>
+        </form>
+      </div>
+      <!-- <div class="countdownVis">
       <div id="rightDot">|</div>
       <div id="leftDot">></div>
     </div> -->
-    <div id="clock" class="inactive">
-      <div class="months"></div>
-      <div class="days"></div>
-      <div class="hours"></div>
-      <div class="minutes"></div>
-      <div class="seconds"></div>
+      <div id="clock" class="inactive">
+        <div class="months"></div>
+        <div class="days"></div>
+        <div class="hours"></div>
+        <div class="minutes"></div>
+        <div class="seconds"></div>
+      </div>
     </div>
 
     <script src="./index.js"></script>
