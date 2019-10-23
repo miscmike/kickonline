@@ -9,16 +9,16 @@
     <title>first dance</title>
   </head>
   <body>
-    <!-- <canvas class="zdog-canvas" height="440px" width="320px"></canvas> -->
+    <canvas class="zdog-canvas" height="440px" width="320px"></canvas>
     <!-- <canvas class="zdog-canvas-two" height="440px" width="320px"></canvas> -->
-    <!-- <canvas class="zdog-canvas-three" height="440px" width="500px"></canvas>
+    <canvas class="zdog-canvas-three" height="440px" width="500px"></canvas>
     <canvas class="zdog-canvas-four" height="440px" width="500px"></canvas>
     <canvas class="zdog-canvas-five" height="440px" width="500px"></canvas>
-    <canvas class="zdog-canvas-six" height="440px" width="500px"></canvas> -->
+    <canvas class="zdog-canvas-six" height="440px" width="500px"></canvas>
     <!-- <canvas class="zdog-canvas-seven" height="440px" width="500px"></canvas> -->
 
     <div>
-      <form name="contact" method="post" action="/" netlify>
+      <form name="contact" method="post" class="active" netlify>
         <input type="hidden" name="form-name" value="contact" />
         <div class="box">
           <label>
@@ -47,7 +47,7 @@
       <div id="rightDot">|</div>
       <div id="leftDot">></div>
     </div> -->
-    <div id="clock">
+    <div id="clock" class="inactive">
       <div class="months"></div>
       <div class="days"></div>
       <div class="hours"></div>
@@ -56,5 +56,6 @@
     </div>
 
     <script src="./index.js"></script>
+    <script src="./form.js"></script>
   </body>
 </html>

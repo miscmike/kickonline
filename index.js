@@ -86,7 +86,7 @@ var subThree = new Zdog.TextGroup({
   addTo: illoThree,
   font: font,
   // Pass an array as the text value for multiline text:
-  value: ["Jennifer", "Loveless"],
+  value: ["nniefrje", "sesvelo"],
   fontSize: 96,
   textAlign: "center",
   textBaseline: "middle",
@@ -115,7 +115,7 @@ var subFour = new Zdog.TextGroup({
   addTo: illoFour,
   font: font,
   // Pass an array as the text value for multiline text:
-  value: ["Eddy", "Diamond"],
+  value: ["dbyo", "crystal"],
   fontSize: 96,
   textAlign: "center",
   textBaseline: "middle",
@@ -144,7 +144,7 @@ var subFive = new Zdog.TextGroup({
   addTo: illoFive,
   font: font,
   // Pass an array as the text value for multiline text:
-  value: ["Dejaan"],
+  value: ["derpod"],
   fontSize: 96,
   textAlign: "center",
   textBaseline: "middle",
@@ -314,7 +314,7 @@ window.onload = function(e) {
       hours.textContent = h + "h";
       minutes.textContent = mi + "m";
       seconds.textContent = s + "s";
-      left.style.paddingRight = "50vw";
+      // left.style.paddingRight = "50vw";
       // left.style.paddingRight = `${Math.floor(200 * Math.random())}px`;
       // left.style.paddingRight = `${95 *
       //   (duration.asMilliseconds() / 6572755000)}%`;
