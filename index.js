@@ -29,7 +29,7 @@ var sub = new Zdog.TextGroup({
   font: font,
   // Pass an array as the text value for multiline text:
   value: ["FIRST", "DANCE"],
-  fontSize: 96,
+  fontSize: 72,
   textAlign: "center",
   textBaseline: "middle",
   color: "#ea0af1",
@@ -58,7 +58,7 @@ var subShadow = sub.copyGraph({
 //   font: font,
 //   // Pass an array as the text value for multiline text:
 //   value: ["NYE"],
-//   fontSize: 96,
+//   fontSize: 72,
 //   textAlign: "center",
 //   textBaseline: "middle",
 //   color: "#ea0af1",
@@ -87,7 +87,7 @@ var subThree = new Zdog.TextGroup({
   font: font,
   // Pass an array as the text value for multiline text:
   value: ["nniefrje", "sesvelo"],
-  fontSize: 96,
+  fontSize: 72,
   textAlign: "center",
   textBaseline: "middle",
   color: "#ea0af1",
@@ -116,7 +116,7 @@ var subFour = new Zdog.TextGroup({
   font: font,
   // Pass an array as the text value for multiline text:
   value: ["dbyo", "crystal"],
-  fontSize: 96,
+  fontSize: 72,
   textAlign: "center",
   textBaseline: "middle",
   color: "#ea0af1",
@@ -145,7 +145,7 @@ var subFive = new Zdog.TextGroup({
   font: font,
   // Pass an array as the text value for multiline text:
   value: ["derpod"],
-  fontSize: 96,
+  fontSize: 72,
   textAlign: "center",
   textBaseline: "middle",
   color: "#ea0af1",
@@ -175,7 +175,7 @@ var subSix = new Zdog.TextGroup({
   font: font,
   // Pass an array as the text value for multiline text:
   value: ["misc", "mike"],
-  fontSize: 96,
+  fontSize: 72,
   textAlign: "center",
   textBaseline: "middle",
   color: "#ea0af1",
@@ -205,7 +205,7 @@ var subShadowSix = subSix.copyGraph({
 //   font: font,
 //   // Pass an array as the text value for multiline text:
 //   value: ["Artist", "Five"],
-//   fontSize: 96,
+//   fontSize: 72,
 //   textAlign: "center",
 //   textBaseline: "middle",
 //   color: "#ea0af1",
