@@ -26,7 +26,7 @@ var modakFont = new Zdog.Font({
 });
 var sub = new Zdog.TextGroup({
   addTo: illo,
-  font: modakFont,
+  font: font,
   // Pass an array as the text value for multiline text:
   value: ["FIRST", "DANCE"],
   fontSize: 96,
@@ -55,7 +55,7 @@ var illoTwo = new Zdog.Illustration({
 
 var subTwo = new Zdog.TextGroup({
   addTo: illoTwo,
-  font: modakFont,
+  font: font,
   // Pass an array as the text value for multiline text:
   value: ["NYE"],
   fontSize: 96,
