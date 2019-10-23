@@ -42,34 +42,34 @@ var subShadow = sub.copyGraph({
   color: "#FFF"
 });
 
-var illoTwo = new Zdog.Illustration({
-  element: ".zdog-canvas-two",
-  //   dragRotate: true,
-  rotate: { x: 0.32, y: -0.64, z: 0 },
-  //   resize: true,
-  onResize: function(width, height) {
-    var minSize = Math.min(width, height);
-    this.zoom = minSize / 420;
-  }
-});
+// var illoTwo = new Zdog.Illustration({
+//   element: ".zdog-canvas-two",
+//   //   dragRotate: true,
+//   rotate: { x: 0.32, y: -0.64, z: 0 },
+//   //   resize: true,
+//   onResize: function(width, height) {
+//     var minSize = Math.min(width, height);
+//     this.zoom = minSize / 420;
+//   }
+// });
 
-var subTwo = new Zdog.TextGroup({
-  addTo: illoTwo,
-  font: font,
-  // Pass an array as the text value for multiline text:
-  value: ["NYE"],
-  fontSize: 96,
-  textAlign: "center",
-  textBaseline: "middle",
-  color: "#ea0af1",
-  fill: true
-});
+// var subTwo = new Zdog.TextGroup({
+//   addTo: illoTwo,
+//   font: font,
+//   // Pass an array as the text value for multiline text:
+//   value: ["NYE"],
+//   fontSize: 96,
+//   textAlign: "center",
+//   textBaseline: "middle",
+//   color: "#ea0af1",
+//   fill: true
+// });
 
-// Duplicate the subtitle to create a shadow effect
-var subShadowTwo = subTwo.copyGraph({
-  translate: { z: 10 },
-  color: "#FFF"
-});
+// // Duplicate the subtitle to create a shadow effect
+// var subShadowTwo = subTwo.copyGraph({
+//   translate: { z: 10 },
+//   color: "#FFF"
+// });
 
 var illoThree = new Zdog.Illustration({
   element: ".zdog-canvas-three",
@@ -86,7 +86,7 @@ var subThree = new Zdog.TextGroup({
   addTo: illoThree,
   font: font,
   // Pass an array as the text value for multiline text:
-  value: ["Artist", "One"],
+  value: ["Jennifer", "Loveless"],
   fontSize: 96,
   textAlign: "center",
   textBaseline: "middle",
@@ -115,7 +115,7 @@ var subFour = new Zdog.TextGroup({
   addTo: illoFour,
   font: font,
   // Pass an array as the text value for multiline text:
-  value: ["Artist", "Two"],
+  value: ["Eddy", "Diamond"],
   fontSize: 96,
   textAlign: "center",
   textBaseline: "middle",
@@ -144,7 +144,7 @@ var subFive = new Zdog.TextGroup({
   addTo: illoFive,
   font: font,
   // Pass an array as the text value for multiline text:
-  value: ["Artist", "Three"],
+  value: ["Dejaan"],
   fontSize: 96,
   textAlign: "center",
   textBaseline: "middle",
@@ -174,7 +174,7 @@ var subSix = new Zdog.TextGroup({
   addTo: illoSix,
   font: font,
   // Pass an array as the text value for multiline text:
-  value: ["Artist", "Four"],
+  value: ["misc", "mike"],
   fontSize: 96,
   textAlign: "center",
   textBaseline: "middle",
@@ -189,34 +189,34 @@ var subShadowSix = subSix.copyGraph({
 });
 
 //illo 7
-var illoSeven = new Zdog.Illustration({
-  element: ".zdog-canvas-seven",
-  //   dragRotate: true,
-  rotate: { x: 0.32, y: -0.64, z: 0 },
-  //   resize: true,
-  onResize: function(width, height) {
-    var minSize = Math.min(width, height);
-    this.zoom = minSize / 420;
-  }
-});
+// var illoSeven = new Zdog.Illustration({
+//   element: ".zdog-canvas-seven",
+//   //   dragRotate: true,
+//   rotate: { x: 0.32, y: -0.64, z: 0 },
+//   //   resize: true,
+//   onResize: function(width, height) {
+//     var minSize = Math.min(width, height);
+//     this.zoom = minSize / 420;
+//   }
+// });
 
-var subSeven = new Zdog.TextGroup({
-  addTo: illoSeven,
-  font: font,
-  // Pass an array as the text value for multiline text:
-  value: ["Artist", "Five"],
-  fontSize: 96,
-  textAlign: "center",
-  textBaseline: "middle",
-  color: "#ea0af1",
-  fill: true
-});
+// var subSeven = new Zdog.TextGroup({
+//   addTo: illoSeven,
+//   font: font,
+//   // Pass an array as the text value for multiline text:
+//   value: ["Artist", "Five"],
+//   fontSize: 96,
+//   textAlign: "center",
+//   textBaseline: "middle",
+//   color: "#ea0af1",
+//   fill: true
+// });
 
-// Duplicate the subtitle to create a shadow effect
-var subShadowSeven = subSeven.copyGraph({
-  translate: { z: 10 },
-  color: "#FFF"
-});
+// // Duplicate the subtitle to create a shadow effect
+// var subShadowSeven = subSeven.copyGraph({
+//   translate: { z: 10 },
+//   color: "#FFF"
+// });
 
 // Settings for the wave animation
 var t = 0;
@@ -243,30 +243,30 @@ function animate() {
   // wave(subShadowTwo);
 
   //   sub.value[0] = sub.value[0] + "a";
-  illo.rotate.y += 0.002;
-  illoTwo.rotate.x += 0.002;
-  illoThree.rotate.z += 0.002;
+  illo.rotate.y += 0.004;
+  // illoTwo.rotate.x += 0.002;
+  illoThree.rotate.z += 0.004;
   // illoThree.rotate.y += -0.002;
-  illoFour.rotate.x += 0.002;
+  illoFour.rotate.x += 0.004;
   // illoFour.rotate.y += -0.002;
   // illoFive.rotate.x += 0.01;
-  illoFive.rotate.y += -0.002;
+  illoFive.rotate.y += -0.004;
   // illoSix.rotate.x += 0.01;
-  illoSix.rotate.z += -0.002;
-  illoSeven.rotate.x += 0.002;
-  illoSeven.rotate.y += -0.002;
+  illoSix.rotate.z += -0.004;
+  // illoSeven.rotate.x += 0.002;
+  // illoSeven.rotate.y += -0.002;
 
   t += tStep;
   //   illo.translate.x += 1;
   //   illo.transform.opacity +
   //   illo.translate.x += 0.3 * Math.sign(Math.random() - 0.5);
   illo.updateRenderGraph();
-  illoTwo.updateRenderGraph();
+  // illoTwo.updateRenderGraph();
   illoThree.updateRenderGraph();
   illoFour.updateRenderGraph();
   illoFive.updateRenderGraph();
   illoSix.updateRenderGraph();
-  illoSeven.updateRenderGraph();
+  // illoSeven.updateRenderGraph();
   requestAnimationFrame(animate);
 }
 // illo.translate.x += -600;
