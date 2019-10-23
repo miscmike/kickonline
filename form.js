@@ -1,10 +1,13 @@
-document.forms[0].onsubmit = function(event) {
-  //   event.preventDefault();
-  hideForm(event);
-  return false;
-};
+// document.forms[0].onsubmit = function(event) {
+//   //   event.preventDefault();
+//   hideForm(event);
+//   return false;
+// };
 
 // console.log(document.forms[0]);
+let button = document
+  .querySelector("button")
+  .addEventListener("click", hideForm);
 
 function hideForm(event) {
   let form = document.getElementById("form-div");
