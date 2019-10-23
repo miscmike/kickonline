@@ -1,0 +1,133 @@
+.zdog-canvas {
+  display: block;
+  -webkit-animation: Fade 5s ease;
+  -moz-animation: Fade 5s ease;
+  animation: Fade 5s ease;
+  /* -webkit-animation: Fade 5s ease infinite alternate;
+  -moz-animation: Fade 5s ease infinite alternate;
+  animation: Fade 5s ease infinite alternate;*/
+}
+
+.countdownVis {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: left;
+  width: 100%;
+  font-size: 64px;
+  color: #ea0af1;
+}
+
+#leftDot {
+  padding: 0 92vw 0 0;
+  transition: padding 3s ease-out;
+}
+
+#clock {
+  display: flex;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  color: #ea0af1;
+  -webkit-animation: Fade 10s ease;
+  -moz-animation: Fade 10s ease;
+  animation: Fade 10s ease;
+}
+
+p {
+  font-size: 24px;
+}
+
+.months,
+.days,
+.hours,
+.minutes,
+.seconds {
+  padding: 0px 16px 0px 0px;
+}
+
+body {
+  font-family: "Abril Fatface";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  /* font-size: 48px; */
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(45deg, #162d6b, #2d0a2e, #05221b);
+  background-color: rgb(38, 38, 38);
+  background-size: 100% 100%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+}
+
+label {
+  font-size: 16px;
+}
+
+.box {
+  margin: 16px;
+  text-align: right;
+}
+
+input {
+  border-radius: 2px;
+  border-width: 0px;
+  margin: 0 0 0 4px;
+  font-size: 16px;
+  cursor: text;
+  padding: 4px;
+}
+
+button {
+  width: 120px;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes Fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
