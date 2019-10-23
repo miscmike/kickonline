@@ -4,11 +4,12 @@
 //   return false;
 // };
 
-let button = document
-  .querySelector("button")
-  .addEventListener("click", hideForm);
+// let button = document
+//   .querySelectorAll("button")[0]
+//   .addEventListener("click", hideForm);
 
 function hideForm(event) {
+  console.log("you're getting here");
   let form = document.getElementById("form-div");
   console.log(form.classList);
   form.classList.toggle("inactive");
