@@ -1,7 +1,19 @@
+$("#my-form").submit(function(e) {
+  e.preventDefault();
+
+  var $form = $(this);
+  $.post($form.attr("action"), $form.serialize()).then(function() {
+    alert("Thank you!");
+  });
+});
+
 // document.forms[0].onsubmit = function(event) {
-//   //   event.preventDefault();
+//   event.preventDefault();
 //   hideForm(event);
-//   return false;
+//   var $form = $(this);
+//   $.post($form.attr("action"), $form.serialize()).then(function() {
+//     alert("Thank you!");
+//   });
 // };
 
 // let button = document
