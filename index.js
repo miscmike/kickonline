@@ -1,14 +1,14 @@
 // Init Zfont plugin and bind to Zdog
 Zfont.init(Zdog);
 ScrollReveal().reveal(".zdog", {
-  delay: 200,
+  delay: 500,
   scale: 0.1,
   reset: true,
   easing: "ease-in",
   viewFactor: 0.5
 });
 
-const textSize = 48;
+const textSize = 32;
 
 // Create Zdog Illustration
 // https://zzz.dog/api#illustration
