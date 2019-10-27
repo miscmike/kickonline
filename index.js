@@ -1,5 +1,14 @@
 // Init Zfont plugin and bind to Zdog
 Zfont.init(Zdog);
+ScrollReveal().reveal(".zdog", {
+  delay: 200,
+  scale: 0.1,
+  reset: true,
+  easing: "ease-in",
+  viewFactor: 0.5
+});
+
+const textSize = 48;
 
 // Create Zdog Illustration
 // https://zzz.dog/api#illustration
@@ -29,7 +38,7 @@ var sub = new Zdog.TextGroup({
   font: font,
   // Pass an array as the text value for multiline text:
   value: ["FIRST", "DANCE"],
-  fontSize: 72,
+  fontSize: textSize,
   textAlign: "center",
   textBaseline: "middle",
   color: "#ea0af1",
@@ -86,8 +95,9 @@ var subThree = new Zdog.TextGroup({
   addTo: illoThree,
   font: font,
   // Pass an array as the text value for multiline text:
-  value: ["nniefrje", "sesvelo"],
-  fontSize: 72,
+  value: ["DJ", "GLOWSTICK"],
+  // value: ["jennifer", "loveless"],
+  fontSize: textSize,
   textAlign: "center",
   textBaseline: "middle",
   color: "#ea0af1",
@@ -115,8 +125,9 @@ var subFour = new Zdog.TextGroup({
   addTo: illoFour,
   font: font,
   // Pass an array as the text value for multiline text:
-  value: ["dbyo", "crystal"],
-  fontSize: 72,
+  value: ["PAPERBOI"],
+  // value: ["eddy", "diamond"],
+  fontSize: textSize,
   textAlign: "center",
   textBaseline: "middle",
   color: "#ea0af1",
@@ -144,8 +155,9 @@ var subFive = new Zdog.TextGroup({
   addTo: illoFive,
   font: font,
   // Pass an array as the text value for multiline text:
-  value: ["derpod"],
-  fontSize: 72,
+  value: ["MIKRO"],
+  // value: ["dejaan"],
+  fontSize: textSize,
   textAlign: "center",
   textBaseline: "middle",
   color: "#ea0af1",
@@ -175,7 +187,7 @@ var subSix = new Zdog.TextGroup({
   font: font,
   // Pass an array as the text value for multiline text:
   value: ["misc", "mike"],
-  fontSize: 72,
+  fontSize: textSize,
   textAlign: "center",
   textBaseline: "middle",
   color: "#ea0af1",

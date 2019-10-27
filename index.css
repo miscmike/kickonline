@@ -1,8 +1,8 @@
 .zdog-canvas {
   display: block;
-  -webkit-animation: Fade 5s ease;
+  /* -webkit-animation: Fade 5s ease;
   -moz-animation: Fade 5s ease;
-  animation: Fade 5s ease;
+  animation: Fade 5s ease; */
   /* -webkit-animation: Fade 5s ease infinite alternate;
   -moz-animation: Fade 5s ease infinite alternate;
   animation: Fade 5s ease infinite alternate;*/
@@ -16,6 +16,11 @@
   font-size: 64px;
   color: #ea0af1;
 }
+
+/* .zdog {
+  visibility: hidden;
+  scale: 1;
+} */
 
 #leftDot {
   padding: 0 92vw 0 0;
@@ -57,9 +62,9 @@ body {
   /* font-size: 48px; */
   text-align: center;
   color: #fff;
-  background: linear-gradient(45deg, #162d6b, #2d0a2e, #05221b);
+  background-image: linear-gradient(90deg, #162d6b, #2d0a2e, #05221b);
   background-color: rgb(38, 38, 38);
-  background-size: 100% 100%;
+  background-size: 100% 600%;
   -webkit-animation: Gradient 15s ease infinite;
   -moz-animation: Gradient 15s ease infinite;
   animation: Gradient 15s ease infinite;
