@@ -8,6 +8,10 @@
   animation: Fade 5s ease infinite alternate;*/
 }
 
+.zdog {
+  width: 50vw;
+}
+
 .countdownVis {
   display: flex;
   flex-direction: row-reverse;
@@ -18,7 +22,7 @@
 }
 
 p {
-  width: 600px;
+  width: 60vw;
   font-size: 24px;
 }
 
