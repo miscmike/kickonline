@@ -1,15 +1,17 @@
 // Init Zfont plugin and bind to Zdog
 Zfont.init(Zdog);
-ScrollReveal().reveal(".zdog", {
-  delay: 500,
-  scale: 0.1,
-  reset: true,
-  easing: "ease-in",
-  viewFactor: 0.5
-});
 
-const textSize = 32;
+const textSize = 72;
+const frontColor = " #f7c44c";
+// const secondColor = "#ea0af1";
+const secondColor = "#5854FF";
 
+// pink and yellow
+// dodger blue => #5854FF
+// pink => #ea0af1
+// yellow => #f7c44c
+// rgb(75,172,230) = #4bace6
+// #62d3af
 // Create Zdog Illustration
 // https://zzz.dog/api#illustration
 var illo = new Zdog.Illustration({
@@ -41,14 +43,14 @@ var sub = new Zdog.TextGroup({
   fontSize: textSize,
   textAlign: "center",
   textBaseline: "middle",
-  color: "#ea0af1",
+  color: secondColor,
   fill: true
 });
 
 // Duplicate the subtitle to create a shadow effect
 var subShadow = sub.copyGraph({
   translate: { z: 10 },
-  color: "#FFF"
+  color: frontColor
 });
 
 // var illoTwo = new Zdog.Illustration({
@@ -70,14 +72,14 @@ var subShadow = sub.copyGraph({
 //   fontSize: 72,
 //   textAlign: "center",
 //   textBaseline: "middle",
-//   color: "#ea0af1",
+//   color: secondColor,
 //   fill: true
 // });
 
 // // Duplicate the subtitle to create a shadow effect
 // var subShadowTwo = subTwo.copyGraph({
 //   translate: { z: 10 },
-//   color: "#FFF"
+//   color: frontColor
 // });
 
 var illoThree = new Zdog.Illustration({
@@ -95,19 +97,19 @@ var subThree = new Zdog.TextGroup({
   addTo: illoThree,
   font: font,
   // Pass an array as the text value for multiline text:
-  value: ["DJ", "GLOWSTICK"],
+  value: ["DJ", "Glowstick"],
   // value: ["jennifer", "loveless"],
   fontSize: textSize,
   textAlign: "center",
   textBaseline: "middle",
-  color: "#ea0af1",
+  color: secondColor,
   fill: true
 });
 
 // Duplicate the subtitle to create a shadow effect
 var subShadowThree = subThree.copyGraph({
   translate: { z: 10 },
-  color: "#FFF"
+  color: frontColor
 });
 
 var illoFour = new Zdog.Illustration({
@@ -125,49 +127,49 @@ var subFour = new Zdog.TextGroup({
   addTo: illoFour,
   font: font,
   // Pass an array as the text value for multiline text:
-  value: ["PAPERBOI"],
+  value: ["paperboi"],
   // value: ["eddy", "diamond"],
   fontSize: textSize,
   textAlign: "center",
   textBaseline: "middle",
-  color: "#ea0af1",
+  color: secondColor,
   fill: true
 });
 
 // Duplicate the subtitle to create a shadow effect
 var subShadowFour = subFour.copyGraph({
   translate: { z: 10 },
-  color: "#FFF"
+  color: frontColor
 });
 //illo5
 var illoFive = new Zdog.Illustration({
   element: ".zdog-canvas-five",
   //   dragRotate: true,
-  rotate: { x: 0.32, y: -0.64, z: 0 },
+  rotate: { x: 0.32, y: -0.64, z: 0 }
   //   resize: true,
-  onResize: function(width, height) {
-    var minSize = Math.min(width, height);
-    this.zoom = minSize / 420;
-  }
+  // onResize: function(width, height) {
+  //   var minSize = Math.min(width, height);
+  //   this.zoom = minSize / 420;
+  // }
 });
 
 var subFive = new Zdog.TextGroup({
   addTo: illoFive,
   font: font,
   // Pass an array as the text value for multiline text:
-  value: ["MIKRO"],
+  value: ["mikro"],
   // value: ["dejaan"],
   fontSize: textSize,
   textAlign: "center",
   textBaseline: "middle",
-  color: "#ea0af1",
+  color: secondColor,
   fill: true
 });
 
 // Duplicate the subtitle to create a shadow effect
 var subShadowFive = subFive.copyGraph({
   translate: { z: 10 },
-  color: "#FFF"
+  color: frontColor
 });
 
 //illo 6
@@ -190,14 +192,14 @@ var subSix = new Zdog.TextGroup({
   fontSize: textSize,
   textAlign: "center",
   textBaseline: "middle",
-  color: "#ea0af1",
+  color: secondColor,
   fill: true
 });
 
 // Duplicate the subtitle to create a shadow effect
 var subShadowSix = subSix.copyGraph({
   translate: { z: 10 },
-  color: "#FFF"
+  color: frontColor
 });
 
 //illo 7
@@ -220,14 +222,14 @@ var subShadowSix = subSix.copyGraph({
 //   fontSize: 72,
 //   textAlign: "center",
 //   textBaseline: "middle",
-//   color: "#ea0af1",
+//   color: secondColor,
 //   fill: true
 // });
 
 // // Duplicate the subtitle to create a shadow effect
 // var subShadowSeven = subSeven.copyGraph({
 //   translate: { z: 10 },
-//   color: "#FFF"
+//   color: frontColor
 // });
 
 // Settings for the wave animation
