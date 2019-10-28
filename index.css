@@ -17,6 +17,11 @@
   color: #ea0af1;
 }
 
+p {
+  width: 600px;
+  font-size: 24px;
+}
+
 /* .zdog {
   visibility: hidden;
   scale: 1;
@@ -41,10 +46,6 @@
   transition: all 2s ease-in;
 }
 
-p {
-  font-size: 24px;
-}
-
 .months,
 .days,
 .hours,
@@ -62,19 +63,20 @@ body {
   /* font-size: 48px; */
   text-align: center;
   color: #fff;
-  /* background-image: linear-gradient(45deg, #162d6b, #2d0a2e, #05221b); */
-  background-image: linear-gradient(
-    45deg,
-    rgb(38, 38, 38),
-    rgb(12, 11, 12),
-    rgb(24, 10, 15)
+
+  background: linear-gradient(
+    90deg,
+    rgb(21, 8, 21),
+    rgb(7, 2, 8),
+    rgb(21, 8, 21)
   );
-  /* background-color: rgb(38, 38, 38); */
-  background-size: 100% 100%;
-  -webkit-animation: Gradient 15s ease infinite;
-  -moz-animation: Gradient 15s ease infinite;
-  animation: Gradient 15s ease infinite;
-  animation-name: background-image;
+
+  background-color: rgb(7, 2, 8);
+  background-size: 200% 200%;
+  background-position: initial;
+  -webkit-animation: Gradient 10s ease infinite;
+  -moz-animation: Gradient 10s ease infinite;
+  animation: Gradient 10s ease infinite;
 }
 
 label {
@@ -135,34 +137,34 @@ button {
 
 @-webkit-keyframes Gradient {
   0% {
-    background-position: 0% 50%;
+    background-position: 0% 20%;
   }
   50% {
-    background-position: 100% 50%;
+    background-position: 100% 20%;
   }
   100% {
-    background-position: 0% 50%;
+    background-position: 0% 20%;
   }
 }
 
 @-moz-keyframes Gradient {
   0% {
-    background-position: 0% 50%;
+    background-position: 0% 20%;
   }
   50% {
-    background-position: 100% 50%;
+    background-position: 100% 20%;
   }
   100% {
-    background-position: 0% 50%;
+    background-position: 0% 20%;
   }
 }
 
 @keyframes Gradient {
   0% {
-    background-position: 0% 50%;
+    background-position: 0% 20%;
   }
   50% {
-    background-position: 100% 50%;
+    background-position: 100% 20%;
   }
   100% {
     background-position: 0% 50%;

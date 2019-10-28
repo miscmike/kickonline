@@ -1,7 +1,7 @@
 // Init Zfont plugin and bind to Zdog
 Zfont.init(Zdog);
 
-const textSize = 72;
+const textSize = 96;
 const frontColor = " #f7c44c";
 // const secondColor = "#ea0af1";
 const secondColor = "#5854FF";
@@ -28,19 +28,42 @@ var illo = new Zdog.Illustration({
 // Create a Font object
 // You can use any .ttf or .otf font!
 // https://github.com/jaames/zfont#zdogfont
-var font = new Zdog.Font({
+const font = new Zdog.Font({
   src: "https://cdn.jsdelivr.net/gh/jaames/zfont/demo/fredokaone.ttf"
 });
 
-var modakFont = new Zdog.Font({
-  src: "https://ucarecdn.com/a00147ba-a7a7-47ed-b519-2e9ec2403d2a/"
+// var modakFont = new Zdog.Font({
+//   src: "https://ucarecdn.com/a00147ba-a7a7-47ed-b519-2e9ec2403d2a/"
+// });
+const righteousFont = new Zdog.Font({
+  src: "https://ucarecdn.com/18db3642-4fe8-4eb4-aa86-a49320c488f0/"
+});
+
+const kristenFont = new Zdog.Font({
+  src: "https://ucarecdn.com/91f77b16-4533-425b-abe0-a09cabdbc430/"
+});
+
+const diamondFont = new Zdog.Font({
+  src: "https://ucarecdn.com/9a5fea90-1c2e-4076-b6e4-1ec724b4db2f/"
+});
+
+const twiddleFont = new Zdog.Font({
+  src: "https://ucarecdn.com/660bbac0-fad9-4fcc-ac4f-4c8eab8f130c/"
+});
+
+const cyberFont = new Zdog.Font({
+  src: "https://ucarecdn.com/678c904d-2d7d-43f3-990f-0f2160f758b3/"
+});
+
+const subDylanFont = new Zdog.Font({
+  src: "https://ucarecdn.com/1dbc707e-c176-427b-85be-f352f2a7d4c2/"
 });
 var sub = new Zdog.TextGroup({
   addTo: illo,
   font: font,
   // Pass an array as the text value for multiline text:
   value: ["FIRST", "DANCE"],
-  fontSize: textSize,
+  fontSize: textSize + 16,
   textAlign: "center",
   textBaseline: "middle",
   color: secondColor,
@@ -95,11 +118,11 @@ var illoThree = new Zdog.Illustration({
 
 var subThree = new Zdog.TextGroup({
   addTo: illoThree,
-  font: font,
+  font: subDylanFont,
   // Pass an array as the text value for multiline text:
-  value: ["DJ", "Glowstick"],
+  value: ["SUBTERRANEAN", "JAZZ CLUB"],
   // value: ["jennifer", "loveless"],
-  fontSize: textSize,
+  fontSize: textSize + 32,
   textAlign: "center",
   textBaseline: "middle",
   color: secondColor,
@@ -125,11 +148,11 @@ var illoFour = new Zdog.Illustration({
 
 var subFour = new Zdog.TextGroup({
   addTo: illoFour,
-  font: font,
+  font: diamondFont,
   // Pass an array as the text value for multiline text:
-  value: ["paperboi"],
+  value: ["EDDY", "DIAMOND"],
   // value: ["eddy", "diamond"],
-  fontSize: textSize,
+  fontSize: textSize + 32,
   textAlign: "center",
   textBaseline: "middle",
   color: secondColor,
@@ -155,9 +178,9 @@ var illoFive = new Zdog.Illustration({
 
 var subFive = new Zdog.TextGroup({
   addTo: illoFive,
-  font: font,
+  font: twiddleFont,
   // Pass an array as the text value for multiline text:
-  value: ["mikro"],
+  value: ["DEJAAN"],
   // value: ["dejaan"],
   fontSize: textSize,
   textAlign: "center",
@@ -265,6 +288,7 @@ function animate() {
   // illoFour.rotate.y += -0.002;
   // illoFive.rotate.x += 0.01;
   illoFive.rotate.y += -0.004;
+  illoFive.rotate.z += -0.004;
   // illoSix.rotate.x += 0.01;
   illoSix.rotate.z += -0.004;
   // illoSeven.rotate.x += 0.002;
