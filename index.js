@@ -32,32 +32,19 @@ const font = new Zdog.Font({
   src: "https://cdn.jsdelivr.net/gh/jaames/zfont/demo/fredokaone.ttf"
 });
 
-// var modakFont = new Zdog.Font({
-//   src: "https://ucarecdn.com/a00147ba-a7a7-47ed-b519-2e9ec2403d2a/"
-// });
-const righteousFont = new Zdog.Font({
-  src: "https://ucarecdn.com/18db3642-4fe8-4eb4-aa86-a49320c488f0/"
-});
-
-const kristenFont = new Zdog.Font({
-  src: "https://ucarecdn.com/91f77b16-4533-425b-abe0-a09cabdbc430/"
-});
-
 const diamondFont = new Zdog.Font({
-  src: "https://ucarecdn.com/9a5fea90-1c2e-4076-b6e4-1ec724b4db2f/"
+  src: "https://ucarecdn.com/b933af13-797f-455d-9936-167f26451609/diamond.ttf"
 });
 
 const twiddleFont = new Zdog.Font({
-  src: "https://ucarecdn.com/660bbac0-fad9-4fcc-ac4f-4c8eab8f130c/"
-});
-
-const cyberFont = new Zdog.Font({
-  src: "https://ucarecdn.com/678c904d-2d7d-43f3-990f-0f2160f758b3/"
+  src:
+    "https://ucarecdn.com/a8c8d117-a8d6-4234-9023-460307e806bf/Twiddlestix.otf"
 });
 
 const subDylanFont = new Zdog.Font({
-  src: "https://ucarecdn.com/1dbc707e-c176-427b-85be-f352f2a7d4c2/"
+  src: "https://ucarecdn.com/c373df43-d4e7-42f0-af16-cfe0ecef0f7a/SB.ttf"
 });
+
 var sub = new Zdog.TextGroup({
   addTo: illo,
   font: font,
@@ -76,35 +63,6 @@ var subShadow = sub.copyGraph({
   color: frontColor
 });
 
-// var illoTwo = new Zdog.Illustration({
-//   element: ".zdog-canvas-two",
-//   //   dragRotate: true,
-//   rotate: { x: 0.32, y: -0.64, z: 0 },
-//   //   resize: true,
-//   onResize: function(width, height) {
-//     var minSize = Math.min(width, height);
-//     this.zoom = minSize / 420;
-//   }
-// });
-
-// var subTwo = new Zdog.TextGroup({
-//   addTo: illoTwo,
-//   font: font,
-//   // Pass an array as the text value for multiline text:
-//   value: ["NYE"],
-//   fontSize: 72,
-//   textAlign: "center",
-//   textBaseline: "middle",
-//   color: secondColor,
-//   fill: true
-// });
-
-// // Duplicate the subtitle to create a shadow effect
-// var subShadowTwo = subTwo.copyGraph({
-//   translate: { z: 10 },
-//   color: frontColor
-// });
-
 var illoThree = new Zdog.Illustration({
   element: ".zdog-canvas-three",
   //   dragRotate: true,
@@ -120,9 +78,10 @@ var subThree = new Zdog.TextGroup({
   addTo: illoThree,
   font: subDylanFont,
   // Pass an array as the text value for multiline text:
-  value: ["SUBTERRANEAN", "JAZZ CLUB"],
+  value: ["MARTHA"],
+  // value: ["MARTHA"],
   // value: ["jennifer", "loveless"],
-  fontSize: textSize + 32,
+  fontSize: textSize + 64,
   textAlign: "center",
   textBaseline: "middle",
   color: secondColor,
@@ -224,36 +183,6 @@ var subShadowSix = subSix.copyGraph({
   translate: { z: 10 },
   color: frontColor
 });
-
-//illo 7
-// var illoSeven = new Zdog.Illustration({
-//   element: ".zdog-canvas-seven",
-//   //   dragRotate: true,
-//   rotate: { x: 0.32, y: -0.64, z: 0 },
-//   //   resize: true,
-//   onResize: function(width, height) {
-//     var minSize = Math.min(width, height);
-//     this.zoom = minSize / 420;
-//   }
-// });
-
-// var subSeven = new Zdog.TextGroup({
-//   addTo: illoSeven,
-//   font: font,
-//   // Pass an array as the text value for multiline text:
-//   value: ["Artist", "Five"],
-//   fontSize: 72,
-//   textAlign: "center",
-//   textBaseline: "middle",
-//   color: secondColor,
-//   fill: true
-// });
-
-// // Duplicate the subtitle to create a shadow effect
-// var subShadowSeven = subSeven.copyGraph({
-//   translate: { z: 10 },
-//   color: frontColor
-// });
 
 // Settings for the wave animation
 var t = 0;

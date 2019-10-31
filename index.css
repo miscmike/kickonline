@@ -1,15 +1,18 @@
 .zdog-canvas {
   display: block;
-  /* -webkit-animation: Fade 5s ease;
+  -webkit-animation: Fade 5s ease;
   -moz-animation: Fade 5s ease;
-  animation: Fade 5s ease; */
-  /* -webkit-animation: Fade 5s ease infinite alternate;
+  animation: Fade 5s ease;
+}
+/* -webkit-animation: Fade 5s ease infinite alternate;
   -moz-animation: Fade 5s ease infinite alternate;
   animation: Fade 5s ease infinite alternate;*/
-}
 
 .zdog {
-  width: 50vw;
+  display: block;
+  -webkit-animation: Fade 5s ease;
+  -moz-animation: Fade 5s ease;
+  animation: Fade 5s ease;
 }
 
 .countdownVis {
