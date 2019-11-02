@@ -54,7 +54,8 @@ var sub = new Zdog.TextGroup({
   textAlign: "center",
   textBaseline: "middle",
   color: secondColor,
-  fill: true
+  fill: true,
+  DragEvent: true
 });
 
 // Duplicate the subtitle to create a shadow effect
