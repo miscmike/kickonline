@@ -5,6 +5,7 @@ const textSize = 96;
 const frontColor = " #f7c44c";
 // const secondColor = "#ea0af1";
 const secondColor = "#5854FF";
+const drag = true;
 
 // pink and yellow
 // dodger blue => #5854FF
@@ -16,7 +17,7 @@ const secondColor = "#5854FF";
 // https://zzz.dog/api#illustration
 var illo = new Zdog.Illustration({
   element: ".zdog-canvas",
-  //   dragRotate: true,
+  dragRotate: drag,
   rotate: { x: -0.32, y: 0.64, z: 0 },
   //   resize: true,
   onResize: function(width, height) {
@@ -66,7 +67,7 @@ var subShadow = sub.copyGraph({
 
 var illoThree = new Zdog.Illustration({
   element: ".zdog-canvas-three",
-  //   dragRotate: true,
+  dragRotate: drag,
   rotate: { x: -0.64, y: 0.32, z: 0 },
   //   resize: true,
   onResize: function(width, height) {
@@ -97,7 +98,7 @@ var subShadowThree = subThree.copyGraph({
 
 var illoFour = new Zdog.Illustration({
   element: ".zdog-canvas-four",
-  //   dragRotate: true,
+  dragRotate: drag,
   rotate: { x: 0.64, y: -0.32, z: 0 },
   //   resize: true,
   onResize: function(width, height) {
@@ -127,7 +128,7 @@ var subShadowFour = subFour.copyGraph({
 //illo5
 var illoFive = new Zdog.Illustration({
   element: ".zdog-canvas-five",
-  //   dragRotate: true,
+  dragRotate: drag,
   rotate: { x: 0.32, y: -0.64, z: 0 }
   //   resize: true,
   // onResize: function(width, height) {
@@ -158,7 +159,7 @@ var subShadowFive = subFive.copyGraph({
 //illo 6
 var illoSix = new Zdog.Illustration({
   element: ".zdog-canvas-six",
-  //   dragRotate: true,
+  dragRotate: drag,
   rotate: { x: 0.32, y: -0.64, z: 0 },
   //   resize: true,
   onResize: function(width, height) {

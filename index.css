@@ -27,6 +27,11 @@
 p {
   width: 60vw;
   font-size: 18px;
+  text-transform: unset;
+}
+
+p strong {
+  text-transform: capitalize;
 }
 
 /* .zdog {
