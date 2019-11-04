@@ -5,9 +5,9 @@ const textSize = 96;
 const frontColor = " #f7c44c";
 // const secondColor = "#ea0af1";
 const secondColor = "#5854FF";
-
+console.log(window.innerHeight);
 let drag = true;
-if (window.innerheight < 600) {
+if (window.innerHeight < 600) {
   drag = false;
 }
 
