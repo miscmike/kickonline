@@ -34,7 +34,7 @@ window.addEventListener(
 var isInViewport = function(elem) {
   var bounding = elem.getBoundingClientRect();
   return (
-    bounding.top >= 0 &&
+    // bounding.top >= 0 &&
     // bounding.left >= 0 &&
     bounding.bottom <= window.innerHeight
   );
