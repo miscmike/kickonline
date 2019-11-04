@@ -5,7 +5,11 @@ const textSize = 96;
 const frontColor = " #f7c44c";
 // const secondColor = "#ea0af1";
 const secondColor = "#5854FF";
-const drag = true;
+
+let drag = true;
+if (window.innerheight < 600) {
+  drag = false;
+}
 
 // pink and yellow
 // dodger blue => #5854FF
