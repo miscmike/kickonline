@@ -172,7 +172,7 @@ var subSix = new Zdog.TextGroup({
   addTo: illoSix,
   font: font,
   // Pass an array as the text value for multiline text:
-  value: ["misc", "mike"],
+  value: ["kickonline", "djs"],
   fontSize: textSize,
   textAlign: "center",
   textBaseline: "middle",
