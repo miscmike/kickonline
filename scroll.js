@@ -35,9 +35,8 @@ var isInViewport = function(elem) {
   var bounding = elem.getBoundingClientRect();
   return (
     bounding.top >= 0 &&
-    bounding.left >= 0 &&
-    bounding.bottom <= window.innerHeight &&
-    bounding.right <= window.innerWidth
+    // bounding.left >= 0 &&
+    bounding.bottom <= window.innerHeight
   );
 };
 // var isInViewport = function(elem) {
