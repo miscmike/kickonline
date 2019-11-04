@@ -1,24 +1,16 @@
 // Init Zfont plugin and bind to Zdog
 Zfont.init(Zdog);
 
-const textSize = 96;
+const textSize = 92;
 const frontColor = " #f7c44c";
 // const secondColor = "#ea0af1";
 const secondColor = "#5854FF";
-console.log(window.innerHeight);
+// console.log(window.innerHeight);
 let drag = true;
 if (window.innerHeight < 600) {
   drag = false;
 }
 
-// pink and yellow
-// dodger blue => #5854FF
-// pink => #ea0af1
-// yellow => #f7c44c
-// rgb(75,172,230) = #4bace6
-// #62d3af
-// Create Zdog Illustration
-// https://zzz.dog/api#illustration
 var illo = new Zdog.Illustration({
   element: ".zdog-canvas",
   dragRotate: drag,
@@ -29,12 +21,9 @@ var illo = new Zdog.Illustration({
     this.zoom = minSize / 420;
   }
 });
-
-// Create a Font object
-// You can use any .ttf or .otf font!
-// https://github.com/jaames/zfont#zdogfont
 const font = new Zdog.Font({
-  src: "https://cdn.jsdelivr.net/gh/jaames/zfont/demo/fredokaone.ttf"
+  src:
+    "https://ucarecdn.com/0efc18f1-d9e3-4507-90d0-2cf9f5f62255/FredokaOneRegular.ttf"
 });
 
 const diamondFont = new Zdog.Font({
@@ -59,8 +48,7 @@ var sub = new Zdog.TextGroup({
   textAlign: "center",
   textBaseline: "middle",
   color: secondColor,
-  fill: true,
-  DragEvent: true
+  fill: true
 });
 
 // Duplicate the subtitle to create a shadow effect
@@ -177,7 +165,7 @@ var subSix = new Zdog.TextGroup({
   font: font,
   // Pass an array as the text value for multiline text:
   value: ["kickonline", "djs"],
-  fontSize: textSize,
+  fontSize: textSize - 16,
   textAlign: "center",
   textBaseline: "middle",
   color: secondColor,
@@ -292,8 +280,8 @@ window.onload = function(e) {
       // left.style.paddingRight = `${95 *
       //   (duration.asMilliseconds() / 6572755000)}%`;
     }, interval);
-    console.log(duration.asMilliseconds());
-    console.log(6572755000);
-    console.log(duration.asMilliseconds() / 6572755000);
+    // console.log(duration.asMilliseconds());
+    // console.log(6572755000);
+    // console.log(duration.asMilliseconds() / 6572755000);
   }
 };

@@ -4,9 +4,6 @@
   -moz-animation: Fade 5s ease;
   animation: Fade 5s ease;
 }
-/* -webkit-animation: Fade 5s ease infinite alternate;
-  -moz-animation: Fade 5s ease infinite alternate;
-  animation: Fade 5s ease infinite alternate;*/
 
 .zdog {
   display: block;
@@ -15,19 +12,10 @@
   animation: Fade 5s ease;
 }
 
-/* .countdownVis {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: left;
-  width: 100%;
-  font-size: 64px;
-  color: #ea0af1;
-} */
-
 p {
   width: 60vw;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 27px;
 }
 p strong {
   text-transform: capitalize;
@@ -52,11 +40,6 @@ a:visited {
 a:hover {
   color: rgb(53, 50, 250);
 }
-
-/* .zdog {
-  visibility: hidden;
-  scale: 1;
-} */
 
 #leftDot {
   padding: 0 92vw 0 0;
@@ -223,14 +206,15 @@ button {
 
 @media only screen and (max-width: 760px) {
   p {
-    width: 80vw;
+    width: 90vw;
+    font-size: 16px;
   }
 
   h1 {
-    width: 80vw;
+    width: 90vw;
   }
 
   h2 {
-    width: 80vw;
+    width: 90vw;
   }
 }
