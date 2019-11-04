@@ -135,7 +135,7 @@ var subFive = new Zdog.TextGroup({
   // Pass an array as the text value for multiline text:
   value: ["DEJAAN"],
   // value: ["dejaan"],
-  fontSize: textSize,
+  fontSize: textSize - 8,
   textAlign: "center",
   textBaseline: "middle",
   color: secondColor,
