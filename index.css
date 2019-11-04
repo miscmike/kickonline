@@ -1,8 +1,13 @@
 .zdog-canvas {
   display: block;
-  -webkit-animation: Fade 5s ease;
+  /* -webkit-animation: Fade 5s ease;
   -moz-animation: Fade 5s ease;
-  animation: Fade 5s ease;
+  animation: Fade 5s ease; */
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  transition: all 2s ease;
 }
 
 hr {
@@ -11,9 +16,14 @@ hr {
 
 .zdog {
   display: block;
-  -webkit-animation: Fade 5s ease;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  transition: all 2s ease;
+  /* -webkit-animation: Fade 5s ease;
   -moz-animation: Fade 5s ease;
-  animation: Fade 5s ease;
+  animation: Fade 5s ease; */
 }
 
 canvas {
@@ -154,11 +164,11 @@ button {
 }
 
 .inactive {
-  /* -webkit-transition: all 2s ease;
+  -webkit-transition: all 2s ease;
   -moz-transition: all 2s ease;
   -o-transition: all 2s ease;
   -ms-transition: all 2s ease;
-  transition: all 2s ease; */
+  transition: all 2s ease;
   opacity: 0;
 }
 
@@ -204,15 +214,6 @@ button {
   }
   100% {
     opacity: 1;
-  }
-}
-
-@keyframes FadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
   }
 }
 
