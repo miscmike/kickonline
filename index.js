@@ -22,25 +22,19 @@ var illo = new Zdog.Illustration({
   }
 });
 const font = new Zdog.Font({
-  src:
-    "https://ucarecdn.com/0efc18f1-d9e3-4507-90d0-2cf9f5f62255/FredokaOneRegular.ttf"
+  src: "./fonts/FredokaOne-Regular.ttf"
 });
 
 const diamondFont = new Zdog.Font({
-  src: "https://ucarecdn.com/b933af13-797f-455d-9936-167f26451609/diamond.ttf"
+  src: "./fonts/diamond.ttf"
 });
 
-// const twiddleFont = new Zdog.Font({
-//   src:
-//     "https://ucarecdn.com/a8c8d117-a8d6-4234-9023-460307e806bf/Twiddlestix.otf"
-// });
-
 const twiddleFont = new Zdog.Font({
-  src: "./Twiddlestix.otf"
+  src: "./fonts/Twiddlestix.otf"
 });
 
 const subDylanFont = new Zdog.Font({
-  src: "https://ucarecdn.com/c373df43-d4e7-42f0-af16-cfe0ecef0f7a/SB.ttf"
+  src: "./fonts/SB.ttf"
 });
 
 var sub = new Zdog.TextGroup({

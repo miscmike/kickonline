@@ -1,18 +1,3 @@
-// $(".zdog").hide();
-
-// $(window).scroll(function() {
-//   if ($(this).scrollTop() > 250) {
-//     if ($(this).scrollTop() > 1250)
-//       $(".zdog")
-//         .stop()
-//         .fadeOut();
-//     else
-//       $(".zdog")
-//         .stop()
-//         .fadeIn();
-//   }
-// });
-
 let canvasArray = document.querySelectorAll(".zdog");
 console.log(canvasArray);
 window.addEventListener(
