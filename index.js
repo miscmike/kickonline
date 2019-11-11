@@ -30,9 +30,13 @@ const diamondFont = new Zdog.Font({
   src: "https://ucarecdn.com/b933af13-797f-455d-9936-167f26451609/diamond.ttf"
 });
 
+// const twiddleFont = new Zdog.Font({
+//   src:
+//     "https://ucarecdn.com/a8c8d117-a8d6-4234-9023-460307e806bf/Twiddlestix.otf"
+// });
+
 const twiddleFont = new Zdog.Font({
-  src:
-    "https://ucarecdn.com/a8c8d117-a8d6-4234-9023-460307e806bf/Twiddlestix.otf"
+  src: "./Twiddlestix.otf"
 });
 
 const subDylanFont = new Zdog.Font({
