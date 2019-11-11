@@ -7,19 +7,6 @@ $("#my-form").submit(function(e) {
   });
 });
 
-// document.forms[0].onsubmit = function(event) {
-//   event.preventDefault();
-//   hideForm(event);
-//   var $form = $(this);
-//   $.post($form.attr("action"), $form.serialize()).then(function() {
-//     alert("Thank you!");
-//   });
-// };
-
-// let button = document
-//   .querySelectorAll("button")[0]
-//   .addEventListener("click", hideForm);
-
 function hideForm() {
   console.log("you're getting here");
   let form = document.getElementById("form-div");
