@@ -161,6 +161,10 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  background: oldlace;
+}
+
 .active {
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
