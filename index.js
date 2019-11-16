@@ -193,39 +193,27 @@ function wave(group) {
 
 // Animation loop
 function animate() {
-  // wave(title);
-  // wave(titleShadow);
-  wave(sub);
-  wave(subShadow);
-  // wave(subTwo);
-  // wave(subShadowTwo);
+  // wave(sub);
+  // wave(subShadow);
 
-  //   sub.value[0] = sub.value[0] + "a";
   illo.rotate.y += 0.004;
-  // illoTwo.rotate.x += 0.002;
+
   illoThree.rotate.z += 0.004;
-  // illoThree.rotate.y += -0.002;
+
   illoFour.rotate.x += 0.004;
-  // illoFour.rotate.y += -0.002;
-  // illoFive.rotate.x += 0.01;
+
   illoFive.rotate.y += -0.004;
   illoFive.rotate.z += -0.004;
-  // illoSix.rotate.x += 0.01;
+
   illoSix.rotate.z += -0.004;
-  // illoSeven.rotate.x += 0.002;
-  // illoSeven.rotate.y += -0.002;
 
   t += tStep;
-  //   illo.translate.x += 1;
-  //   illo.transform.opacity +
   //   illo.translate.x += 0.3 * Math.sign(Math.random() - 0.5);
   illo.updateRenderGraph();
-  // illoTwo.updateRenderGraph();
   illoThree.updateRenderGraph();
   illoFour.updateRenderGraph();
   illoFive.updateRenderGraph();
   illoSix.updateRenderGraph();
-  // illoSeven.updateRenderGraph();
   requestAnimationFrame(animate);
 }
 // illo.translate.x += -600;
