@@ -1,8 +1,8 @@
 // Init Zfont plugin and bind to Zdog
 Zfont.init(Zdog);
 
-// const textSize = 92;
-const textSize = 184 * 2;
+const textSize = 92;
+// const textSize = 184 * 2;
 const frontColor = "#f7c44c";
 // const secondColor = "#ea0af1";
 const secondColor = "#5854FF";
@@ -194,10 +194,10 @@ function wave(group) {
 
 // Animation loop
 function animate() {
-  // wave(sub);
-  // wave(subShadow);
+  wave(sub);
+  wave(subShadow);
 
-  // illo.rotate.y += 0.004;
+  illo.rotate.y += 0.004;
 
   illoThree.rotate.z += 0.004;
 
