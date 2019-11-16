@@ -2,7 +2,7 @@
 Zfont.init(Zdog);
 
 // const textSize = 92;
-const textSize = 184;
+const textSize = 184 * 2;
 const frontColor = "#f7c44c";
 // const secondColor = "#ea0af1";
 const secondColor = "#5854FF";
