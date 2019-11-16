@@ -283,3 +283,13 @@ window.onload = function(e) {
     // console.log(duration.asMilliseconds() / 6572755000);
   }
 };
+
+let s = "";
+if (s.includes("A")) {
+  return s.substr(0,8)
+} else {
+  let time = s.substr(0,2);
+  const integer = parseInt(time, 10) + 12;
+  time = integer.toString + s.substr(2,6)
+  return time;
+}
