@@ -193,8 +193,8 @@ function wave(group) {
 
 // Animation loop
 function animate() {
-  // wave(sub);
-  // wave(subShadow);
+  wave(sub);
+  wave(subShadow);
 
   illo.rotate.y += 0.004;
 
