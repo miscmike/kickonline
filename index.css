@@ -71,9 +71,10 @@ a:hover {
 
 #clock {
   display: flex;
-  font-size: 18px;
+  /* background: yellow; */
+  font-size: 32px;
   font-weight: 600;
-  text-align: center;
+  text-align: right;
   color: #fff;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
