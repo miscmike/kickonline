@@ -72,7 +72,7 @@ a:hover {
 .clock {
   display: flex;
   /* background: yellow; */
-  padding: 0 0 40px 0;
+  padding: 20px 0;
   font-size: 24px;
   font-weight: 600;
   text-align: right;
