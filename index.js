@@ -222,7 +222,7 @@ function animate() {
 animate();
 
 window.onload = function(e) {
-  let clock = document.querySelector("#clock"),
+  let clock = document.querySelector(".clock"),
     eventTime = moment("01-01-2020 00:00:01", "DD-MM-YYYY HH:mm:ss").unix(),
     currentTime = moment().unix(),
     diffTime = eventTime - currentTime,
