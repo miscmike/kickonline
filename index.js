@@ -30,6 +30,10 @@ const diamondFont = new Zdog.Font({
   src: "./fonts/diamond.ttf"
 });
 
+const orbitronFont = new Zdog.Font({
+  src: "./fonts/orbitron-regular.ttf"
+});
+
 const twiddleFont = new Zdog.Font({
   src: "./fonts/Twiddlestix.otf"
 });
@@ -100,9 +104,10 @@ var illoFour = new Zdog.Illustration({
 
 var subFour = new Zdog.TextGroup({
   addTo: illoFour,
-  font: diamondFont,
+  font: orbitronFont,
   // Pass an array as the text value for multiline text:
-  value: ["EDDY", "DIAMOND"],
+  // value: ["ISA", "DIAMOND"],
+  value: ["ISA"],
   // value: ["eddy", "diamond"],
   fontSize: textSize + 32,
   textAlign: "center",
