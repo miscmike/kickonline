@@ -69,10 +69,10 @@ a:hover {
   color: rgb(53, 50, 250);
 }
 
-#clock {
+.clock {
   display: flex;
   /* background: yellow; */
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 600;
   text-align: right;
   color: #fff;
