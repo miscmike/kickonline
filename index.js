@@ -109,7 +109,7 @@ var subFour = new Zdog.TextGroup({
   // value: ["ISA", "DIAMOND"],
   value: ["ISA"],
   // value: ["eddy", "diamond"],
-  fontSize: textSize + 32,
+  fontSize: textSize + 16,
   textAlign: "center",
   textBaseline: "middle",
   color: secondColor,
