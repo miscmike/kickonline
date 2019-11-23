@@ -262,7 +262,7 @@ window.onload = function(e) {
         s = moment.duration(duration).seconds();
 
       // show how many hours, minutes and seconds are left
-      months.textContent = mo + "m";
+      months.textContent = mo + "mo";
       days.textContent = d + "d";
       hours.textContent = h + "h";
       minutes.textContent = mi + "m";
