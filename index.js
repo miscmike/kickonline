@@ -105,18 +105,14 @@ var illoFour = new Zdog.Illustration({
 var subFour = new Zdog.TextGroup({
   addTo: illoFour,
   font: orbitronFont,
-  // Pass an array as the text value for multiline text:
-  // value: ["ISA", "DIAMOND"],
   value: ["ISA"],
-  // value: ["eddy", "diamond"],
   fontSize: textSize + 16,
   textAlign: "center",
   textBaseline: "middle",
   color: secondColor,
   fill: true
 });
-
-// Duplicate the subtitle to create a shadow effect
+//duplicate shadow for 3d effect
 var subShadowFour = subFour.copyGraph({
   translate: { z: 10 },
   color: frontColor
@@ -126,19 +122,12 @@ var illoFive = new Zdog.Illustration({
   element: ".zdog-canvas-five",
   dragRotate: drag,
   rotate: { x: 0.32, y: -0.64, z: 0 }
-  //   resize: true,
-  // onResize: function(width, height) {
-  //   var minSize = Math.min(width, height);
-  //   this.zoom = minSize / 420;
-  // }
 });
 
 var subFive = new Zdog.TextGroup({
   addTo: illoFive,
   font: twiddleFont,
-  // Pass an array as the text value for multiline text:
   value: ["DEJAAN"],
-  // value: ["dejaan"],
   fontSize: textSize - 8,
   textAlign: "center",
   textBaseline: "middle",
@@ -157,7 +146,6 @@ var illoSix = new Zdog.Illustration({
   element: ".zdog-canvas-six",
   dragRotate: drag,
   rotate: { x: 0.32, y: -0.64, z: 0 },
-  //   resize: true,
   onResize: function(width, height) {
     var minSize = Math.min(width, height);
     this.zoom = minSize / 420;
@@ -167,7 +155,6 @@ var illoSix = new Zdog.Illustration({
 var subSix = new Zdog.TextGroup({
   addTo: illoSix,
   font: font,
-  // Pass an array as the text value for multiline text:
   value: ["kickonline", "djs"],
   fontSize: textSize - 16,
   textAlign: "center",
@@ -188,12 +175,10 @@ var tStep = 5;
 var amplitude = 1;
 var frequency = 160;
 
-// Wave function
-// This loops through every shape in a TextGroup and modifies its position according to a sine wave
 function wave(group) {
   group.children.forEach(shape => {
     var x = shape.translate.x + t;
-    shape.translate.y += amplitude * Math.sin(x / frequency);
+    shape.translate.y += amplitude * Math.cos(x / frequency);
   });
 }
 
@@ -222,7 +207,6 @@ function animate() {
   illoSix.updateRenderGraph();
   requestAnimationFrame(animate);
 }
-// illo.translate.x += -600;
 
 animate();
 
@@ -233,7 +217,6 @@ window.onload = function(e) {
     diffTime = eventTime - currentTime,
     duration = moment.duration(diffTime * 1000, "milliseconds"),
     interval = 1000;
-  // this.console.log(diffTime);
 
   // if time to countdown
   if (diffTime > 0) {
@@ -245,10 +228,6 @@ window.onload = function(e) {
       minutes = document.querySelector(".minutes"),
       seconds = document.querySelector(".seconds"),
       left = document.getElementById("leftDot");
-
-    // h = $('<div class="hours" ></div>').appendTo($clock),
-    // m = $('<div class="minutes" ></div>').appendTo($clock),
-    // s = $('<div class="seconds" ></div>').appendTo($clock);
 
     setInterval(function() {
       duration = moment.duration(
@@ -267,13 +246,6 @@ window.onload = function(e) {
       hours.textContent = h + "h";
       minutes.textContent = mi + "m";
       seconds.textContent = s + "s";
-      // left.style.paddingRight = "50vw";
-      // left.style.paddingRight = `${Math.floor(200 * Math.random())}px`;
-      // left.style.paddingRight = `${95 *
-      //   (duration.asMilliseconds() / 6572755000)}%`;
     }, interval);
-    // console.log(duration.asMilliseconds());
-    // console.log(6572755000);
-    // console.log(duration.asMilliseconds() / 6572755000);
   }
 };
