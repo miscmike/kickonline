@@ -8,11 +8,11 @@ $("#my-form").submit(function(e) {
 });
 
 function hideForm() {
-  console.log("you're getting here");
+  // console.log("you're getting here");
   let form = document.getElementById("form-div");
-  console.log(form.classList);
+  // console.log(form.classList);
   form.classList.toggle("inactive");
-  let clock = document.getElementById("clock");
+  let clock = document.getElementById("bottom-clock");
   setTimeout(function() {
     // form.style.display = "none";
     clock.classList.toggle("active");
