@@ -219,12 +219,16 @@ window.onload = function(e) {
   if (diffTime > 0) {
     // Show clock
 
-    var months = document.querySelector(".months"),
-      days = document.querySelector(".days"),
-      hours = document.querySelector(".hours"),
-      minutes = document.querySelector(".minutes"),
-      seconds = document.querySelector(".seconds"),
-      left = document.getElementById("leftDot");
+    var months = document.querySelectorAll(".months")[0],
+      days = document.querySelectorAll(".days")[0],
+      hours = document.querySelectorAll(".hours")[0],
+      minutes = document.querySelectorAll(".minutes")[0],
+      seconds = document.querySelectorAll(".seconds")[0],
+      monthsTwo = document.querySelectorAll(".months")[1],
+      daysTwo = document.querySelectorAll(".days")[1],
+      hoursTwo = document.querySelectorAll(".hours")[1],
+      minutesTwo = document.querySelectorAll(".minutes")[1],
+      secondsTwo = document.querySelectorAll(".seconds")[1];
 
     setInterval(function() {
       duration = moment.duration(
@@ -243,6 +247,11 @@ window.onload = function(e) {
       hours.textContent = h + "h";
       minutes.textContent = mi + "m";
       seconds.textContent = s + "s";
+      monthsTwo.textContent = mo + "mo";
+      daysTwo.textContent = d + "d";
+      hoursTwo.textContent = h + "h";
+      minutesTwo.textContent = mi + "m";
+      secondsTwo.textContent = s + "s";
     }, interval);
   }
 };
