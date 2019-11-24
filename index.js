@@ -8,9 +8,9 @@ const frontColor = "#f7c44c";
 const secondColor = "#5854FF";
 // console.log(window.innerHeight);
 let drag = true;
-// if (window.innerHeight < 600) {
-//   drag = false;
-// }
+if (window.innerHeight < 600) {
+  drag = false;
+}
 
 var illo = new Zdog.Illustration({
   element: ".zdog-canvas",
