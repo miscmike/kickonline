@@ -26,10 +26,6 @@ const font = new Zdog.Font({
   src: "./fonts/FredokaOne-Regular.ttf"
 });
 
-const diamondFont = new Zdog.Font({
-  src: "./fonts/diamond.ttf"
-});
-
 const orbitronFont = new Zdog.Font({
   src: "./fonts/orbitron-regular.ttf"
 });
