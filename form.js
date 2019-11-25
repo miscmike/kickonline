@@ -18,7 +18,7 @@ function hideForm() {
     // form.style.display = "none";
     clock.classList.toggle("active");
     clock.classList.toggle("inactive");
-    clock.style.transform = "translateY(-100px)";
+    clock.style.transform = "translateY(-200px)";
   }, 3000);
   //   event.target.style.transform = "opacity";
   //   event.target.style.display = "none";
