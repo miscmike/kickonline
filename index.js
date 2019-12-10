@@ -129,7 +129,7 @@ var subFive = new Zdog.TextGroup({
   addTo: illoFive,
   font: quartzFont,
   value: ["DEJAAN"],
-  fontSize: textSize - 8,
+  fontSize: textSize,
   textAlign: "center",
   textBaseline: "middle",
   color: secondColor,
