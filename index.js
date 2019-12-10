@@ -29,12 +29,16 @@ const diamondFont = new Zdog.Font({
   src: "./fonts/diamond.ttf"
 });
 
-const twiddleFont = new Zdog.Font({
-  src: "./fonts/Twiddlestix.otf"
-});
+// const twiddleFont = new Zdog.Font({
+//   src: "./fonts/Twiddlestix.otf"
+// });
 
 const subDylanFont = new Zdog.Font({
   src: "./fonts/SB.ttf"
+});
+
+const quartzFont = new Zdog.Font({
+  src: "./fonts/SF_Quartzite.ttf"
 });
 
 var sub = new Zdog.TextGroup({
@@ -129,7 +133,7 @@ var illoFive = new Zdog.Illustration({
 
 var subFive = new Zdog.TextGroup({
   addTo: illoFive,
-  font: twiddleFont,
+  font: quartzFont,
   // Pass an array as the text value for multiline text:
   value: ["DEJAAN"],
   // value: ["dejaan"],
