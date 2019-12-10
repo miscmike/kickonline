@@ -31,13 +31,19 @@ const orbitronFont = new Zdog.Font({
   src: "./fonts/orbitron-regular.ttf"
 });
 
-const twiddleFont = new Zdog.Font({
-  src: "./fonts/Twiddlestix.otf"
-});
+// const twiddleFont = new Zdog.Font({
+//   src: "./fonts/Twiddlestix.otf"
+// });
 
 const subDylanFont = new Zdog.Font({
   src: "./fonts/SB.ttf"
 });
+
+const quartzFont = new Zdog.Font({
+  src: "./fonts/SF-Quartzite.ttf"
+})
+
+const 
 
 var sub = new Zdog.TextGroup({
   addTo: illo,
@@ -123,7 +129,7 @@ var illoFive = new Zdog.Illustration({
 
 var subFive = new Zdog.TextGroup({
   addTo: illoFive,
-  font: twiddleFont,
+  font: quartzFont,
   value: ["DEJAAN"],
   fontSize: textSize - 8,
   textAlign: "center",
