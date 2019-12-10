@@ -41,9 +41,7 @@ const subDylanFont = new Zdog.Font({
 
 const quartzFont = new Zdog.Font({
   src: "./fonts/SF-Quartzite.ttf"
-})
-
-const 
+});
 
 var sub = new Zdog.TextGroup({
   addTo: illo,
