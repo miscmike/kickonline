@@ -76,7 +76,7 @@ var subThree = new Zdog.TextGroup({
   addTo: illoThree,
   font: subDylanFont,
   // Pass an array as the text value for multiline text:
-  value: ["NUMARTHA"],
+  value: ["NÜMARTHA"],
   // value: ["MARTHA"],
   // value: ["jennifer", "loveless"],
   fontSize: textSize + 64,
