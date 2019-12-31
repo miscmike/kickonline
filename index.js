@@ -261,5 +261,10 @@ window.onload = function(e) {
       minutesTwo.textContent = mi + "m";
       secondsTwo.textContent = s + "s";
     }, interval);
+  } else {
+    let happy = document.querySelectorAll(".months")[0];
+    let happyTwo = document.querySelectorAll(".months")[1];
+    happy.textContent = "HAPPY NEW YEAR!";
+    happyTwo.textContent = "HAPPY NEW YEAR!";
   }
 };
