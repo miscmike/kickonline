@@ -65,7 +65,7 @@ a:hover {
   padding: 20px 0;
   font-size: 24px;
   font-weight: 600;
-  text-align: right;
+  text-align: center;
   color: #fff;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
@@ -80,6 +80,7 @@ a:hover {
 .minutes,
 .seconds {
   padding: 0px 16px 0px 0px;
+  text-align: center;
 }
 
 body {
