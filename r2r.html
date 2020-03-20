@@ -9,12 +9,12 @@
       href="https://fonts.googleapis.com/css?family=Baloo|Bowlby+One+SC&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="index.css" />
 
     <title>kickonline</title>
   </head>
   <body>
+    
     <svg
       width="128px"
       height="128px"
@@ -66,20 +66,25 @@
       </g>
     </svg>
 
-    <div id="main-column">
-      <h1>
-        kickonline
-      </h1>
-
-      <h2>future</h2>
-      <p><a href="./r2r.html">yeah what</a></p>
-      <h2>past</h2>
-      <p>
-        <a href="https://firstdance.kickonline.co"
-          >FIRST DANCE by kickonline
-        </a>
-      </p>
+    <h1>room 2 radio</h1>
+    <div id="twitch-embed">
+    
     </div>
+    <iframe src="https://minnit.chat/room2radio?embed&nickname=" style="border:none;width:90%;height:500px;" allowTransparency="true"></iframe><br>
+    
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+    <script type="text/javascript">
+        new Twitch.Embed("twitch-embed", {
+          width: 854,
+          height: 480,
+          channel: "room2radio",
+          layout: "video",
+          autoplay: true,
+          // only needed if your site is also embedded on embed.example.com and othersite.example.com 
+        //   parent: ["embed.example.com", "othersite.example.com"]
+        });
+      </script>
+
     <!-- <script src="./index.js"></script> -->
   </body>
 </html>
