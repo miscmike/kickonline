@@ -61,6 +61,14 @@ a:hover {
   text-decoration: underline;
 }
 
+iframe {
+  border-radius: 16px;
+}
+
+#twitch-embed {
+  border-radius: 16px;
+}
+
 html {
   /* background-color: orange; */
   background-color: rgb(21,12,21);
